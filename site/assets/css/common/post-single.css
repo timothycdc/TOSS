@@ -11,6 +11,7 @@
 .post-description {
     margin-top: 10px;
     margin-bottom: 5px;
+    transition: border 0.3s, background 0.3s ease;
 }
 
 .post-meta,
@@ -123,8 +124,8 @@
     padding-inline-start: 10px;
 }
 
-.post-content dd ~ dd,
-.post-content dt ~ dt {
+.post-content dd~dd,
+.post-content dt~dt {
     margin-top: 10px;
 }
 
@@ -160,7 +161,7 @@
     border-radius: var(--radius);
 }
 
-.post-content li > .highlight {
+.post-content li>.highlight {
     margin-inline-end: 0;
 }
 
@@ -247,14 +248,14 @@
     text-align: center;
 }
 
-.post-content figure > figcaption {
+.post-content figure>figcaption {
     color: var(--primary);
     font-size: 16px;
     font-weight: bold;
     margin: 8px 0 16px;
 }
 
-.post-content figure > figcaption > p {
+.post-content figure>figcaption>p {
     color: var(--secondary);
     font-size: 14px;
     font-weight: normal;
@@ -266,6 +267,7 @@
     background: var(--code-bg);
     border-radius: var(--radius);
     padding: 0.4em;
+    transition: border 0.3s, background 0.3s ease;
 }
 
 .dark .toc {
