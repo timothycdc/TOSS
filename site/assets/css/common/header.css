@@ -1,47 +1,104 @@
-.nav {
+.header {
+    background-color: var(--header-color);
+    transition: background ease 0.25s;
+    height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: calc(var(--nav-width) + var(--gap) * 2);
-    margin-inline-start: auto;
-    margin-inline-end: auto;
+    width: 250px;
+    padding: 0;
+    position: fixed;
+}
+
+.nav {
+    padding-top: 40px;
+    position: relative;
+    max-width: 100%;
     line-height: var(--header-height);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.logo-circle {
+    /* (A) PERCENTAGE WIDTH & BORDER RADIUS */
+    width: 70px;
+    border-radius: 50%;
+    /* (B) BACKGROUND COLOR */
+    background: var(--logo-bg);
+    /* (C) NECESSARY TO POSITION TEXT BLOCK */
+    line-height: 0;
+    position: relative;
+    margin: auto;
+    margin-bottom: 5px;
+    transition: background 0.2s ease-out;
+}
+
+
+/* (D) MATCH HEIGHT */
+
+.logo-circle::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+
+/* (E) TEXT BLOCK */
+
+.logo-txt {
+    /* (E1) CENTER TEXT IN CIRCLE */
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    text-align: center;
+    /* (E2) THE FONT - NOT REALLY IMPORTANT */
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--logo-semicolon);
 }
 
 .nav a {
     display: block;
+    width: 100%;
 }
 
 .logo,
 #menu {
-    display: flex;
-    margin: auto var(--gap);
+    margin: auto;
+    width: 100%;
 }
 
 .logo {
     flex-wrap: inherit;
+    margin: 15px 0 15px 0;
 }
 
 .logo a {
-    font-size: 24px;
+    font-size: 35px;
     font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 15px;
 }
 
 .logo a img {
-    display: inline;
-    vertical-align: middle;
+    display: block;
+    margin: auto;
     pointer-events: none;
-    transform: translate(0, -10%);
     border-radius: 6px;
-    margin-inline-end: 8px;
+    margin-bottom: 5px;
 }
 
 #theme-toggle svg {
-    height: 18px;
+    height: 25px;
+    top: 4px;
+    position: relative;
+}
+
+#theme-button-wrapper {
+    position: relative;
 }
 
 button#theme-toggle {
-    font-size: 26px;
     margin: auto 4px;
 }
 
@@ -58,27 +115,78 @@ body:not(.dark) #sun {
     list-style: none;
     word-break: keep-all;
     overflow-x: auto;
+    overflow-y: auto;
     white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
 }
 
-#menu li + li {
-    margin-inline-start: var(--gap);
+.menu-item {
+    position: relative;
+    vertical-align: middle;
+    padding: 0 50px;
+}
+
+.menu-item a {
+    display: inline-flex;
+}
+
+.menu-item span {
+    flex: 1
+}
+
+.active {
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.active svg {
+    stroke-width: 2.5px;
+}
+
+#menu svg {
+    height: 25px;
+    min-width: 20px;
+    margin: auto;
 }
 
 #menu a {
-    font-size: 16px;
+    font-size: 20px;
 }
 
+#toggle-label {
+    list-style: none;
+    display: inline-flex;
+    line-height: 20px;
+}
+
+#toggle-label a {
+    word-break: keep-all;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/*
 #menu .active {
     font-weight: 500;
     border-bottom: 2px solid currentColor;
 }
+*/
 
 .lang-switch li,
 .lang-switch ul,
 .logo-switches {
-    display: inline-flex;
-    margin: auto 4px;
+    margin-left: auto 4px;
 }
 
 .lang-switch {

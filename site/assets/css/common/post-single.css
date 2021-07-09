@@ -1,3 +1,13 @@
+.post-single {
+    width: 60vw;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: var(--theme);
+    padding: var(--gap);
+    transition: background 0.2s ease;
+    border: 1px solid var(--border);
+}
+
 .page-header,
 .post-header {
     margin: 24px auto var(--content-gap) auto;
@@ -11,7 +21,7 @@
 .post-description {
     margin-top: 10px;
     margin-bottom: 5px;
-    transition: border 0.3s, background 0.3s ease;
+    transition: border 0.2s, background 0.2s ease;
 }
 
 .post-meta,
@@ -264,10 +274,10 @@
 .toc {
     margin: 0 2px 40px 2px;
     border: 1px solid var(--border);
-    background: var(--code-bg);
+    background: var(--pattern1);
     border-radius: var(--radius);
     padding: 0.4em;
-    transition: border 0.3s, background 0.3s ease;
+    transition: border 0.2s, background 0.2s ease;
 }
 
 .dark .toc {
@@ -315,8 +325,18 @@
 .share-buttons,
 .paginav {
     border-radius: var(--radius);
-    background: var(--code-bg);
+    background: var(--pattern2);
     border: 1px solid var(--border);
+}
+
+.dark .paginav {
+    border-radius: var(--radius);
+    background: var(--entry);
+    border: 1px solid var(--border);
+}
+
+.dark .share-buttons {
+    background: var(--entry);
 }
 
 .post-tags a {
@@ -326,34 +346,39 @@
     color: var(--secondary);
     font-size: 14px;
     line-height: 34px;
-    background: var(--code-bg);
+    background: var(--pattern2);
 }
 
 .post-tags a:hover,
 .paginav a:hover {
-    background: var(--border);
+    background: var(--paginav-hover);
 }
 
 .share-buttons {
     margin: 14px 0;
-    padding-inline-start: var(--radius);
+    padding-inline-start: 12px;
     display: flex;
     justify-content: center;
     overflow-x: auto;
+    width: fit-content;
 }
 
 .share-buttons a {
     margin-top: 10px;
-}
-
-.share-buttons a:not(:last-of-type) {
     margin-inline-end: 12px;
 }
+
+.share-buttons a:not(:last-of-type) {}
 
 .share-buttons a svg {
     height: 30px;
     width: 30px;
     fill: currentColor;
+    transition: all 0.1s;
+}
+
+.share-buttons a svg:hover {
+    fill: var(--paginav-hover);
     transition: transform 0.1s;
 }
 
