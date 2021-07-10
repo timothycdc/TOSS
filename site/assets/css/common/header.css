@@ -165,7 +165,7 @@
     }
     
     .hamburger {
-        display: none;
+        display: none !important
     }
     
     .hamburger-inner,
@@ -263,7 +263,7 @@
             padding: 0;
         }
         .hamburger {
-            display: block;
+            display: block !important;
             position: absolute;
             top: 5px;
             right: 20px;
