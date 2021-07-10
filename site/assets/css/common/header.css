@@ -1,205 +1,281 @@
-.header {
-    background-color: var(--header-color);
-    transition: background ease 0.25s;
-    height: 100vh;
-    display: flex;
-    width: 250px;
-    padding: 0;
-    position: fixed;
-}
-
-.nav {
-    padding-top: 40px;
-    position: relative;
-    max-width: 100%;
-    line-height: var(--header-height);
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    overflow-y: auto;
-}
-
-.logo-circle {
-    /* (A) PERCENTAGE WIDTH & BORDER RADIUS */
-    width: 70px;
-    border-radius: 50%;
-    /* (B) BACKGROUND COLOR */
-    background: var(--logo-bg);
-    /* (C) NECESSARY TO POSITION TEXT BLOCK */
-    line-height: 0;
-    position: relative;
-    margin: auto;
-    margin-bottom: 5px;
-    transition: background 0.2s ease-out;
-}
-
-
-/* (D) MATCH HEIGHT */
-
-.logo-circle::after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
-}
-
-
-/* (E) TEXT BLOCK */
-
-.logo-txt {
-    /* (E1) CENTER TEXT IN CIRCLE */
-    position: absolute;
-    bottom: 50%;
-    width: 100%;
-    text-align: center;
-    /* (E2) THE FONT - NOT REALLY IMPORTANT */
-    font-weight: 700;
-    font-size: 40px;
-    color: var(--logo-semicolon);
-}
-
-.nav a {
-    display: block;
-    width: 100%;
-}
-
-.logo,
-#menu {
-    margin: auto;
-    width: 100%;
-}
-
-.logo {
-    flex-wrap: inherit;
-    margin: 15px 0 15px 0;
-}
-
-.logo a {
-    font-size: 35px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    margin-top: 15px;
-}
-
-.logo a img {
-    display: block;
-    margin: auto;
-    pointer-events: none;
-    border-radius: 6px;
-    margin-bottom: 5px;
-}
-
-#theme-toggle svg {
-    height: 25px;
-    top: 4px;
-    position: relative;
-}
-
-#theme-button-wrapper {
-    position: relative;
-}
-
-button#theme-toggle {
-    margin: auto 4px;
-}
-
-body.dark #moon {
-    vertical-align: middle;
-    display: none;
-}
-
-body:not(.dark) #sun {
-    display: none;
-}
-
-#menu {
-    list-style: none;
-    word-break: keep-all;
-    overflow-x: auto;
-    overflow-y: auto;
-    white-space: nowrap;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    display: flex;
-    flex-grow: 1;
-}
-
-.menu-item {
-    position: relative;
-    vertical-align: middle;
-    padding: 0 50px;
-}
-
-.menu-item a {
-    display: inline-flex;
-}
-
-.menu-item span {
-    flex: 1
-}
-
-.active {
-    font-weight: 500;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-}
-
-.active svg {
-    stroke-width: 2.5px;
-}
-
-#menu svg {
-    height: 25px;
-    min-width: 20px;
-    margin: auto;
-}
-
-#menu a {
-    font-size: 20px;
-}
-
-#toggle-label {
-    list-style: none;
-    display: inline-flex;
-    line-height: 20px;
-}
-
-#toggle-label a {
-    word-break: keep-all;
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    text-align: center;
-    width: 100%;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-
-/*
+    .header {
+        background-color: var(--header-color);
+        transition: background ease 0.25s;
+        height: 100vh;
+        display: flex;
+        width: 300px;
+        padding: 0;
+        position: fixed;
+    }
+    
+    .nav {
+        padding-top: 40px;
+        position: relative;
+        max-width: 100%;
+        line-height: var(--header-height);
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        overflow-y: auto;
+    }
+    
+    .logo-circle {
+        /* (A) PERCENTAGE WIDTH & BORDER RADIUS */
+        width: 70px;
+        border-radius: 50%;
+        /* (B) BACKGROUND COLOR */
+        background: var(--logo-bg);
+        /* (C) NECESSARY TO POSITION TEXT BLOCK */
+        line-height: 0;
+        position: relative;
+        margin: auto;
+        margin-bottom: 5px;
+        transition: background 0.2s ease-out;
+    }
+    /* (D) MATCH HEIGHT */
+    
+    .logo-circle::after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+    /* (E) TEXT BLOCK */
+    
+    .logo-txt {
+        /* (E1) CENTER TEXT IN CIRCLE */
+        position: absolute;
+        bottom: 50%;
+        width: 100%;
+        text-align: center;
+        /* (E2) THE FONT - NOT REALLY IMPORTANT */
+        font-weight: 700;
+        font-size: 40px;
+        color: var(--logo-semicolon);
+    }
+    
+    .nav a {
+        display: block;
+        width: 100%;
+    }
+    
+    .logo,
+    #menu {
+        margin: auto;
+        width: 100%;
+    }
+    
+    .logo {
+        flex-wrap: inherit;
+        margin: 15px 0 15px 0;
+    }
+    
+    .logo a {
+        font-size: 35px;
+        font-weight: 700;
+    }
+    
+    .logo a img {
+        display: block;
+        margin: auto;
+        pointer-events: none;
+        border-radius: 6px;
+        margin-bottom: 5px;
+    }
+    
+    #theme-toggle svg {}
+    
+    #theme-button-wrapper {
+        position: relative;
+    }
+    
+    button#theme-toggle {
+        margin: auto 4px;
+    }
+    
+    body.dark #moon {
+        vertical-align: middle;
+        display: none;
+    }
+    
+    body:not(.dark) #sun {
+        display: none;
+    }
+    
+    #menu {
+        list-style: none;
+        word-break: keep-all;
+        overflow-x: auto;
+        overflow-y: auto;
+        white-space: nowrap;
+        flex-direction: column;
+        list-style: none;
+        display: flex;
+        flex-grow: 1;
+    }
+    
+    .menu-item {
+        position: relative;
+        vertical-align: middle;
+        padding: 0 50px;
+    }
+    
+    .menu-item a {
+        display: inline-flex;
+    }
+    
+    .menu-item span {
+        flex: 1
+    }
+    
+    .active {
+        font-weight: 500;
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
+    
+    .active svg {
+        stroke-width: 2.5px;
+    }
+    
+    #menu svg {
+        height: 25px;
+        min-width: 20px;
+        margin: auto;
+    }
+    
+    #menu a {
+        font-size: 20px;
+    }
+    
+    #toggle-label {
+        list-style: none;
+        display: inline-flex;
+        line-height: 20px;
+    }
+    
+    #toggle-label a {
+        word-break: keep-all;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+    
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        background-color: var(--primary) !important;
+    }
+    /*
 #menu .active {
     font-weight: 500;
     border-bottom: 2px solid currentColor;
 }
 */
-
-.lang-switch li,
-.lang-switch ul,
-.logo-switches {
-    margin-left: auto 4px;
-}
-
-.lang-switch {
-    display: flex;
-    flex-wrap: inherit;
-}
-
-.lang-switch a {
-    margin: auto 3px;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.logo-switches {
-    flex-wrap: inherit;
-}
+    
+    .lang-switch li,
+    .lang-switch ul,
+    .logo-switches {
+        margin-left: auto 4px;
+    }
+    
+    .lang-switch {
+        display: flex;
+        flex-wrap: inherit;
+    }
+    
+    .lang-switch a {
+        margin: auto 3px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    .logo-switches {
+        flex-wrap: inherit;
+    }
+    
+    @media screen and (max-width: 768px) {
+        .nav {
+            padding-top: 10px;
+            position: relative;
+            width: 100%;
+            height: auto;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: row;
+        }
+        .nav a {
+            width: 60%
+        }
+        .logo {
+            display: flex;
+            width: 30%;
+            padding: 15px;
+            flex: 1;
+        }
+        .logo a {
+            text-align: left;
+            line-height: 55px;
+            padding: 10px
+        }
+        .logo-circle {
+            padding: 0;
+            margin-bottom: 0;
+            margin: auto 10px auto 10px;
+        }
+        .logo a {
+            font-size: 30px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+        .nav ul {
+            display: none;
+        }
+        #menu {
+            width: fit-content;
+            position: relative;
+            width: 40%;
+            margin: 0;
+            padding: 0;
+            flex: 1;
+            padding-top: 80px;
+            max-height: 0;
+            transition: max-height 0.5s ease-in;
+            overflow-y: hidden;
+        }
+        .active-menu {
+            max-height: 1000px !important;
+            transition: max-height 0.5s ease-in;
+            display: block;
+            !important
+        }
+        .menu-item {
+            position: relative;
+            vertical-align: middle;
+            flex: 0;
+            padding: 0;
+        }
+        .hamburger {
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 20px;
+            z-index: 999;
+        }
+    }
+    
+    @media screen and (max-width: 400px) {
+        .logo-circle {
+            display: none;
+        }
+        .logo {
+            flex: 0;
+        }
+    }

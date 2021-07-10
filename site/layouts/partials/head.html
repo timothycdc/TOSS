@@ -52,3 +52,4 @@ $fastsearch ) | resources.Concat "assets/js/search.js" | minify | fingerprint }}
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}"> {{ end -}} {{- range .AllTranslations -}}
 <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" /> {{ end }} {{- partial "extend_head.html" . -}} {{- /* Misc */}} {{- if hugo.IsProduction | or (eq .Site.Params.env "production") }} {{- template "_internal/google_analytics.html" . }} {{- template "_internal/google_news.html" . }} {{- template "partials/templates/opengraph.html"
 . }} {{- template "partials/templates/twitter_cards.html" . }} {{- template "partials/templates/schema_json.html" . }} {{- end -}}
+
