@@ -137,11 +137,11 @@ menu:
           url: /archive/
           pre: archive
           weight: 40
-        - identifier: contact
-          name: Contact
-          url: /contact/
-          pre: send
-          weight: 50
+        #- identifier: contact
+        #  name: Contact
+        #  url: /contact/
+         # pre: send
+         # weight: 50
         - identifier: events
           name: Events
           url: /events/

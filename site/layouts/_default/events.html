@@ -1,0 +1,24 @@
+{{- define "main" }}
+
+<article class='content-wrapper'>
+    <header class="page-header">
+        <h1>{{ .Title }}&nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        </h1>
+        {{- if .Description }}
+        <div class="post-description">
+            {{ .Description }}
+        </div>
+        {{- end }} {{- if not (.Param "hideMeta") }}
+        <div class="post-meta">
+            {{- partial "translation_list.html" . -}}
+        </div>
+        {{- end }}
+    </header>
+
+<iframe src="https://calendar.google.com/calendar/embed?src=ht3jlfaac5lfd6263ulfh4tql8%40group.calendar.google.com&ctz=Asia%2FKuala_Lumpur" style="border: 0" width="100%" height="300px" frameborder="0" scrolling="no"></iframe>
+
+
+
+
+    {{- end }}{{/* end main */}}

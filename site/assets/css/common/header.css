@@ -82,8 +82,6 @@
         margin-bottom: 5px;
     }
     
-    #theme-toggle svg {}
-    
     #theme-button-wrapper {
         position: relative;
     }
@@ -111,30 +109,38 @@
         list-style: none;
         display: flex;
         flex-grow: 1;
+        padding-top: 20px;
     }
     
     .menu-item {
         position: relative;
         vertical-align: middle;
-        padding: 0 50px;
+        padding: 0 50px 0 70px;
+        text-transform: uppercase;
+        font-weight: 500;
     }
     
     .menu-item a {
         display: inline-flex;
+        letter-spacing: 0.2px;
     }
     
     .menu-item span {
         flex: 1
     }
     
-    .active {
-        font-weight: 500;
-        text-decoration: underline;
-        text-underline-offset: 2px;
+    .active a {
+        font-weight: 700;
+    }
+    
+    .active mark {
+        background-color: var(--primary);
+        color: var(--logo-semicolon);
+        padding: 2px;
     }
     
     .active svg {
-        stroke-width: 2.5px;
+        stroke-width: 2.2px;
     }
     
     #menu svg {
@@ -144,7 +150,7 @@
     }
     
     #menu a {
-        font-size: 20px;
+        font-size: 16px;
     }
     
     #toggle-label {
@@ -219,6 +225,7 @@
             width: 30%;
             padding: 15px;
             flex: 1;
+            align-self: flex-start;
         }
         .logo a {
             text-align: left;
@@ -246,15 +253,15 @@
             padding: 0;
             flex: 1;
             padding-top: 80px;
+            padding-bottom: 10px !important;
             max-height: 0;
-            transition: max-height 0.5s ease-in;
+            transition: max-height 0.4s ease-in-out;
             overflow-y: hidden;
         }
         .active-menu {
             max-height: 1000px !important;
-            transition: max-height 0.5s ease-in;
+            transition: max-height 0.4s ease-in-out;
             display: block;
-            !important
         }
         .menu-item {
             position: relative;
@@ -277,5 +284,8 @@
         }
         .logo {
             flex: 0;
+        }
+        .logo a {
+            font-size: 34px;
         }
     }

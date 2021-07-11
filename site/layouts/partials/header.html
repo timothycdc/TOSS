@@ -1,34 +1,65 @@
-{{- /* theme-toggle is enabled */}} {{- if (not .Site.Params.disableThemeToggle) }} {{- /* theme is light */}} {{- if (eq .Site.Params.defaultTheme "light") }}
+{{- /* theme-toggle is enabled */}}
+{{- if (not .Site.Params.disableThemeToggle) }}
 
-
+{{- /* theme is light */}}
+{{- if (eq .Site.Params.defaultTheme "light") }}
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
     }
+
 </script>
-{{- /* theme is dark */}} {{- else if (eq .Site.Params.defaultTheme "dark") }}
+
+
+{{- /* theme is dark */}}
+{{- else if (eq .Site.Params.defaultTheme "dark") }}
 <script>
     if (localStorage.getItem("pref-theme") === "light") {
         document.body.classList.remove('dark')
     }
+
 </script>
-{{- else }} {{- /* theme is auto */}}
+
+
+{{- else }}
+{{- /* theme is auto */}}
 <script>
+        if(window.matchMedia("(prefers-color-scheme : dark)")){
+            document.body.classList.add("dark");
+        } else{
+                document.body.classList.remove("dark");
+            }
+        sessionStorage.setItem("initialThemeSet", true);
+    
+
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
     } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
+        document.body.classList.remove('dark')}
+
+     
+    
+
+
+
+    
+
+
 </script>
-{{- end }} {{- /* theme-toggle is disabled and theme is auto */}} {{- else if (and (ne .Site.Params.defaultTheme "light") (ne .Site.Params.defaultTheme "dark"))}}
+
+{{- end }}
+{{- /* theme-toggle is disabled and theme is auto */}}
+{{- else if (and (ne .Site.Params.defaultTheme "light") (ne .Site.Params.defaultTheme "dark"))}}
 <script>
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.body.classList.add('dark');
     }
+
 </script>
 {{- end }}
+
+
+
 <noscript>
     <style type="text/css">
         #theme-toggle,
@@ -37,6 +68,7 @@
         }
 
     </style>
+    <!--
     {{- if (and (ne .Site.Params.defaultTheme "light") (ne .Site.Params.defaultTheme "dark")) }}
     <style>
         @media (prefers-color-scheme: dark) {
@@ -66,7 +98,7 @@
         }
 
     </style>
-    {{- end }}
+    {{- end }} -->
 </noscript>
 
 <header class="header">
@@ -105,8 +137,8 @@
                         {{ end }}
                     <span>
 
-                        {{- .Name -}}
-                        {{ .Post -}}
+                        {{- if eq $menu_item_url $page_url }} <mark> {{- end }}{{- .Name -}}
+                        {{ .Post -}}{{- if eq $menu_item_url $page_url }} </mark> {{- end }}
                     </span>
                 </a>
                 </span>
@@ -172,8 +204,9 @@
 var hamburger = document.querySelector(".hamburger");
 var navmenu = document.getElementById("menu");
 hamburger.addEventListener("click", function() {
-hamburger.classList.toggle("is-active");
 navmenu.classList.toggle('active-menu');
+hamburger.classList.toggle("is-active");
+
     });
 
   </script>

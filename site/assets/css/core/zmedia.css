@@ -14,100 +14,82 @@
     .post-entry {
         width: 95%;
     }
-}
-
-@media (prefers-reduced-motion) {
-    /* terms; profile-mode; post-single; post-entry; post-entry; search; search */
-    .terms-tags a:active,
-    .button:active,
-    .share-buttons svg:active,
-    .post-entry:active,
-    .top-link,
-    #searchResults .focus,
-    #searchResults li:active {
-        transform: none;
+    .menu-item {
+        padding: 0 5vw 0 7vw;
     }
-    .entry-link:after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 2px;
-        display: block;
-        right: 0;
-        bottom: 0;
-        background: currentColor;
+    @media (prefers-reduced-motion) {
+        /* terms; profile-mode; post-single; post-entry; post-entry; search; search */
+        .terms-tags a:active,
+        .button:active,
+        .share-buttons svg:active,
+        .post-entry:active,
+        .top-link,
+        #searchResults .focus,
+        #searchResults li:active {
+            transform: none;
+        }
+        .entry-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            right: 0;
+            bottom: 0;
+            background: currentColor;
+        }
+        .entry-link:hover:after {
+            width: 100%;
+            left: 0;
+            background: currentColor;
+        }
     }
-    .entry-link:hover:after {
-        width: 100%;
-        left: 0;
-        background: currentColor;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    /* theme-vars */
-     :root {
-        --gap: 14px;
-    }
-    /* profile-mode */
-    .profile img {
-        transform: scale(0.85);
-    }
-    /* post-entry */
-    .first-entry {
-        min-height: 260px;
-    }
-    /* archive */
-    .archive-month {
-        flex-direction: column;
-    }
-    .archive-year {
-        margin-top: 20px;
-    }
-    /* footer */
-    .footer {
-        padding: calc((var(--footer-height) - var(--gap) - 10px) / 2) var(--gap);
-    }
-    .wrapper {
-        width: 100vw;
-        margin: 0;
-    }
-    .main {
-        max-width: 100vw;
-        width: 100vw;
-        margin: auto;
-    }
-    .header {
-        width: 100vw;
-        height: fit-content;
-        top: 0;
-        z-index: 9999;
-        display: block;
-        position: relative;
-    }
-    .main {
-        width: 100vw;
-    }
-}
-
-@media screen and (min-width: 10px) {
-     ::-webkit-scrollbar {
-        width: 10px;
-        height: 11px;
+    @media screen and (max-width: 768px) {
+        /* theme-vars */
+         :root {
+            --gap: 14px;
+        }
+        /* profile-mode */
+        .profile img {
+            transform: scale(0.85);
+        }
+        /* post-entry */
+        .first-entry {
+            min-height: 260px;
+        }
+        /* archive */
+        .archive-month {
+            flex-direction: column;
+        }
+        .archive-year {
+            margin-top: 20px;
+        }
+        /* footer */
+        .footer {
+            padding: calc((var(--footer-height) - var(--gap) - 10px) / 2) var(--gap);
+        }
+        .wrapper {
+            width: 100vw;
+            margin: 0;
+        }
+        .main {
+            max-width: 100vw;
+            width: 100vw;
+            margin: auto;
+        }
+        .header {
+            width: 100vw;
+            height: fit-content;
+            top: 0;
+            z-index: 9999;
+            display: block;
+            position: relative;
+        }
+        @media screen and (min-width: 10px) {
+             ::-webkit-scrollbar {
+                width: 10px;
+                height: 11px;
+            }
+        }
     }
 }
-
-
-/* footer */
-
-
-/*
-@media screen and (min-height: 670px) {
-    #theme-button-wrapper {
-        position: absolute;
-        bottom: 10px;
-        left: 0;
-        width: 100%;
-    }
-}
-*/
