@@ -117,13 +117,9 @@ pre:hover .copy-code {
     overflow: visible;
 }
 
-.hamburger:hover {
-    opacity: 0.7;
-}
+.hamburger:hover {}
 
-.hamburger.is-active:hover {
-    opacity: 0.7;
-}
+.hamburger.is-active:hover {}
 
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
