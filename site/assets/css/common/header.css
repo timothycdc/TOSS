@@ -226,6 +226,10 @@ border-bottom: 2px solid currentColor;
     @media screen and (max-width: 768px) {
         .header {
             height: auto;
+            position: fixed !important;
+        }
+        .main {
+            margin-top: 110px !important;
         }
         .nav {
             padding-top: 10px;
@@ -242,10 +246,9 @@ border-bottom: 2px solid currentColor;
         .logo {
             display: flex;
             width: 30%;
-            padding: 15px;
             flex: 1;
             align-self: flex-start;
-            margin-left: 10px !important;
+            margin: 10px 5px 5px 10px !important;
         }
         .logo a {
             text-align: left;
@@ -278,11 +281,13 @@ border-bottom: 2px solid currentColor;
             max-height: 0px;
             transition: max-height 0.4s ease-in-out;
             overflow-y: hidden;
+            padding-right: 10px;
         }
         .active-menu {
             max-height: 1000px !important;
             transition: max-height 0.4s ease-in-out;
             display: block;
+            margin-top: 150px;
         }
         .active-menu a {
             background: rgba(126, 125, 125, 0.2);
@@ -316,7 +321,7 @@ border-bottom: 2px solid currentColor;
             display: block !important;
             position: absolute;
             top: 5px;
-            right: 20px;
+            right: 10px;
             z-index: 999;
         }
         #theme-toggle :active {
@@ -334,16 +339,21 @@ border-bottom: 2px solid currentColor;
         #menu {
             width: 100%;
             margin: 0;
-            padding: 0px 15px 15px 15px;
+            padding: 0px 5px 15px;
             overflow: hidden;
             margin-top: -15px;
+            transition-property: margin-top;
+            transition-duration: 0.3s ease;
+        }
+        #menu.active-menu {
+            margin-top: 20px !important;
         }
         .menu-item {
             width: 100%;
         }
     }
     
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 300px) {
         .logo-circle {
             display: none;
         }
