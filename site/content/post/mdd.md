@@ -3,11 +3,15 @@ title: Major Depressive Disorder
 date: 2021-01-29
 description: >-
   The medical definition, the symptoms, the statistics and our story
+  
 cover:
     image: "/img/depress.jpg"
     alt: "<alt text>"
     caption: "<text>"
     relative: false # To use relative path for cover image, used in hugo Page-bundles
+
+
+
 ---
 
 # What is Major Depressive Disorder?

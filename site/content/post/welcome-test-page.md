@@ -9,7 +9,8 @@ tags = [
 ]
 categories = [
     "reference",
-    "syntax"
+    "syntax",
+    "events"
 ]
 
 image = "pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg"

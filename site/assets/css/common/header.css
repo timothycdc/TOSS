@@ -88,6 +88,11 @@
     
     button#theme-toggle {
         margin: auto 4px;
+        transition: background 3s ease-in !important;
+    }
+    
+    #theme-toggle:active {
+        background: rgb(238, 56, 56);
     }
     
     body.dark #moon {
@@ -307,6 +312,9 @@ border-bottom: 2px solid currentColor;
             top: 5px;
             right: 20px;
             z-index: 999;
+        }
+        #theme-toggle :active {
+            background: rgba(126, 125, 125, 0.5);
         }
     }
     
