@@ -16,8 +16,8 @@ To move towards an inclusive and non-judgemental society alongside a reformed su
 
 # 3. Our Logo
 {{<rawhtml>}}
-<div class="logo-circle"  style = 'margin-left: 5px;'>
-                <div class="logo-txt">;</div>
+<div class="logo-circle-secondary"  style = 'margin-left: 5px;'>
+                <div class="logo-txt-secondary">;</div>
             </div>
             <br>
 {{</rawhtml>}}

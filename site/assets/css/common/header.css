@@ -333,3 +333,37 @@
             font-family: 'Frank Ruhl Libre';
         }
     }
+    
+    .logo-circle-secondary {
+        /* (A) PERCENTAGE WIDTH & BORDER RADIUS */
+        width: 70px;
+        border-radius: 50%;
+        /* (B) BACKGROUND COLOR */
+        background: var(--logo-bg);
+        /* (C) NECESSARY TO POSITION TEXT BLOCK */
+        line-height: 0;
+        position: relative;
+        margin: auto;
+        margin-bottom: 5px;
+        transition: background 0.2s ease-out;
+    }
+    /* (D) MATCH HEIGHT */
+    
+    .logo-circle-secondary::after {
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+    }
+    /* (E) TEXT BLOCK */
+    
+    .logo-txt-secondary {
+        /* (E1) CENTER TEXT IN CIRCLE */
+        position: absolute;
+        bottom: 50%;
+        width: 100%;
+        text-align: center;
+        /* (E2) THE FONT - NOT REALLY IMPORTANT */
+        font-weight: 700;
+        font-size: 40px;
+        color: var(--logo-semicolon);
+    }
