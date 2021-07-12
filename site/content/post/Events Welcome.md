@@ -32,6 +32,8 @@ Go to Search: `Alt` + `/`
 
 Change Theme: `Alt` + `T`
 
+Toggle Table of Contents: `Alt` + `C`
+
 If you're on Mac, substitute the `Alt` keys with both the `Control^` and `Option`keys ^_^
 
 # Features
