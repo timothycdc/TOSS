@@ -32,7 +32,7 @@ Go to Search: `Alt` + `/`
 
 Change Theme: `Alt` + `T`
 
-If you're on Mac, substitute the `Alt` keys with both the `Control^` and `Option`keys!
+If you're on Mac, substitute the `Alt` keys with both the `Control^` and `Option`keys ^_^
 
 # Features
 This website is screen-reader friendly for the vision-impaired. This website also disables animations on device request, also known as the `Reduce Motion` accessibility setting. The contrast ratios and colour scheme have also been optimised for clarity.
