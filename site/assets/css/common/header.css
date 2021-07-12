@@ -5,6 +5,7 @@
         display: flex;
         width: 300px;
         padding: 0;
+        padding-bottom: 10px;
         position: fixed;
     }
     
@@ -273,7 +274,7 @@ border-bottom: 2px solid currentColor;
             padding: 30px;
             flex: 1;
             padding-top: 80px;
-            padding-bottom: 20px !important;
+            padding-bottom: 15px !important;
             max-height: 0px;
             transition: max-height 0.4s ease-in-out;
             overflow-y: hidden;
@@ -333,8 +334,9 @@ border-bottom: 2px solid currentColor;
         #menu {
             width: 100%;
             margin: 0;
-            padding: 15px;
+            padding: 0px 15px 15px 15px;
             overflow: hidden;
+            margin-top: -15px;
         }
         .menu-item {
             width: 100%;
