@@ -1,4 +1,8 @@
 @media screen and (max-width: 1024px) {
+    .logo {
+        margin: 20px auto;
+        padding: 0;
+    }
     .wrapper {
         margin-left: 28vw;
     }
