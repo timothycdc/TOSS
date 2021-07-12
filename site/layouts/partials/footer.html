@@ -1,13 +1,10 @@
 <footer class="footer">
     {{- if .Site.Copyright }}
-    <span>{{ .Site.Copyright | markdownify }}</span>
-    {{- else }}
-    <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a></span>
-    {{- end }}
+    <span>{{ .Site.Copyright | markdownify }}</span> {{- else }}
+    <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a></span> {{- end }}
     <span>
-        Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+        Coded by <a href="https://timochung.netlify.app" rel="noopener noreferrer" target="_blank">Timo</a> 
+        Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> 
     </span>
 </footer>
 
@@ -19,19 +16,17 @@
         </svg>
     </button>
 </a>
-{{- end }}
-
-{{- partial "extend_footer.html" . }}
+{{- end }} {{- partial "extend_footer.html" . }}
 
 <script>
     let menu = document.getElementById('menu')
     menu.scrollLeft = localStorage.getItem("menu-scroll-position");
-    menu.onscroll = function () {
+    menu.onscroll = function() {
         localStorage.setItem("menu-scroll-position", menu.scrollLeft);
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener("click", function (e) {
+        anchor.addEventListener("click", function(e) {
             e.preventDefault();
             var id = this.getAttribute("href").substr(1);
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -48,13 +43,12 @@
             }
         });
     });
-
 </script>
 
 {{- if (not .Site.Params.disableScrollToTop) }}
 <script>
     var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
+    window.onscroll = function() {
         if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
             mybutton.style.visibility = "visible";
             mybutton.style.opacity = "1";
@@ -63,13 +57,9 @@
             mybutton.style.opacity = "0";
         }
     };
-
 </script>
-{{- end }}
-
-{{- if (not .Site.Params.disableThemeToggle) }}
+{{- end }} {{- if (not .Site.Params.disableThemeToggle) }}
 <script>
-
     document.getElementById("theme-toggle").addEventListener("click", () => {
 
         if (document.body.className.includes("dark")) {
@@ -80,11 +70,8 @@
             localStorage.setItem("pref-theme", 'dark');
         }
     })
-
 </script>
-{{- end }}
-
-{{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (.Site.Params.ShowCodeCopyButtons)) }}
+{{- end }} {{- if (and (eq .Kind "page") (ne .Layout "archives") (ne .Layout "search") (.Site.Params.ShowCodeCopyButtons)) }}
 <script>
     document.querySelectorAll('pre > code').forEach((codeblock) => {
         const container = codeblock.parentNode.parentNode;
@@ -115,7 +102,7 @@
             try {
                 document.execCommand('copy');
                 copyingDone();
-            } catch (e) { };
+            } catch (e) {};
             selection.removeRange(range);
         });
 

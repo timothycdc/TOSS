@@ -115,7 +115,7 @@
     .menu-item {
         position: relative;
         vertical-align: middle;
-        padding: 0 50px 0 70px;
+        padding: 0 60px 0 60px;
         text-transform: uppercase;
         font-weight: 500;
     }
@@ -123,6 +123,7 @@
     .menu-item a {
         display: inline-flex;
         letter-spacing: 0.2px;
+        padding: 0 15px;
     }
     
     .menu-item span {
@@ -131,12 +132,16 @@
     
     .active a {
         font-weight: 700;
+        background-color: var(--logo-bg);
+        color: var(--logo-semicolon);
+        border-radius: 5px;
     }
     
-    .active mark {
-        background-color: var(--primary);
-        color: var(--logo-semicolon);
-        padding: 2px;
+    .active mark {}
+    
+    .active mark::after {
+        display: block;
+        border-bottom: 4px solid currentColor;
     }
     
     .active svg {
@@ -257,6 +262,17 @@
             max-height: 0;
             transition: max-height 0.4s ease-in-out;
             overflow-y: hidden;
+        }
+        .active a {
+            font-weight: 700;
+            background-color: rgba(0, 0, 0, 0);
+            color: var(--primary);
+        }
+        .active-menu .active a {
+            font-weight: 700;
+            background-color: var(--logo-bg);
+            color: var(--logo-semicolon);
+            border-radius: 5px;
         }
         .active-menu {
             max-height: 1000px !important;
