@@ -78,11 +78,10 @@ params:
         - name: instagram
           url: "https://www.instagram.com/toss.my/"
         - name: email
-          url: "https://www.instagram.com/toss.my/"
+          url: "mailto:tosshelp.my@gmail.com"
         - name: twitter
           url: "https://www.instagram.com/toss.my/"
-        - name: linkedin
-          url: "https://www.instagram.com/toss.my/"
+
 
 
 #    analytics:

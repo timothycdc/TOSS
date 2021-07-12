@@ -54,10 +54,23 @@
     <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
   </section>
   {{- end }}
+
+
+  
+
   {{- if not (.Param "hideMeta") }}
+
   <footer class="entry-footer">
     {{- partial "post_meta.html" . -}}
+        <ul class="terms-tags-start">
+      {{- range (.GetTerms "categories") }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+  </ul>
   </footer>
+
+
+
   {{- end }}
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 </article>

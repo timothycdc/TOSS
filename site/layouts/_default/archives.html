@@ -8,7 +8,7 @@
         </header>
         <ul class="terms-tags">
             {{ range $key, $value := $taxonomy }}
-            <li> <a href="{{ $taxonomyname | relLangURL}}/{{ $key | urlize }}"> {{ $key }}  <sup><strong><sup></sup></strong></sup> </a></li>
+            <li> <a href="{{ $taxonomyname | relLangURL}}/{{ $key | urlize }}"> {{ $key | humanize | title }}  <sup><strong><sup></sup></strong></sup> </a></li>
             <!--<ul>
                 {{ range $value.Pages }}
                     <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
@@ -18,8 +18,7 @@
             </li>
         </ul>
 
-        <hr style = 'border-top: 2px solid var(--border);'>
-        {{ end }}
+        <hr style='border-top: 2px solid var(--border);'> {{ end }}
     </ul>
 
     <!--

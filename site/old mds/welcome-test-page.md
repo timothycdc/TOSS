@@ -7,6 +7,7 @@ description = "This article is pretty much saying hello and testing out all the 
 tags = [
     "welcome"
 ]
+hidden = true
 categories = [
     "reference",
     "syntax",

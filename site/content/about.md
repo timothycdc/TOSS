@@ -4,6 +4,7 @@ layout: "post"
 url: "/about/"
 summary: about
 author: TOSS
+ShowBreadCrumbs: false
 ---
 
 Greetings from TOSS! Join us as we embark on a journey to build inclusivity and diminish social stigma on mental health by bringing more and more awareness to it. As teenagers, we find it especially important to bring light to these issues. We hope you can join us on our journey to destigmatise mental health and bring more and more awareness 💛

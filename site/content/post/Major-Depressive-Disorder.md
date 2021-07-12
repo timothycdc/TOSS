@@ -1,18 +1,23 @@
 ---
+author: 'TOSS'
 title: Major Depressive Disorder
 date: 2021-01-29
 description: >-
   The medical definition, the symptoms, the statistics and our story
-  
+
 cover:
     image: "/img/depress.jpg"
-    alt: "<alt text>"
-    caption: "<text>"
+    alt: "sad person sat on chair"
+    caption: ""
     relative: false # To use relative path for cover image, used in hugo Page-bundles
 
 
+categories: ['Depression', 'Mental Health']
+tags: ['Major Depressive Disorder', 'Symptoms', 'Contact Resources']
 
 ---
+
+
 
 # What is Major Depressive Disorder?
 **Major Depressive Disorder** is a common mental disorder which impacts the way you act, feel and think. It is characterised by persistent sadness and the lack of pleasure/interest. [^1]
