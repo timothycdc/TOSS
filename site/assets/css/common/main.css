@@ -107,6 +107,10 @@
     pre:hover .copy-code {
         display: block;
     }
+    
+    .terms-tags .page-header {
+        margin: 18px auto
+    }
     /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
