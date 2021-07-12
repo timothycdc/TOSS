@@ -19,62 +19,18 @@
         overflow-y: auto;
     }
     
-    .nav a {
-        display: block;
-        width: 100%;
-    }
-    
-    .logo,
-    #menu {
-        margin: auto;
-        width: 100%;
-    }
-    
-    .logo {
-        flex-wrap: inherit;
-        flex-direction: row;
-        display: flex;
-        padding: 20px 50px;
-        margin: auto;
-        justify-content: center;
-    }
-    
-    .logo a {
-        font-size: 25px;
-        font-weight: 700;
-        writing-mode: vertical-rl;
-        text-orientation: upright;
-        width: auto;
-        vertical-align: auto;
-        letter-spacing: -2px;
-    }
-    
-    .logo a img {
-        display: block;
-        margin: auto;
-        pointer-events: none;
-        border-radius: 6px;
-        margin-bottom: 5px;
-    }
-    
-    .nav .logo-circle {
-        width: 110px;
-        height: 110px;
-    }
-    
     .logo-circle {
         /* (A) PERCENTAGE WIDTH & BORDER RADIUS */
-        width: 50px;
-        height: auto;
+        width: 70px;
         border-radius: 50%;
         /* (B) BACKGROUND COLOR */
         background: var(--logo-bg);
         /* (C) NECESSARY TO POSITION TEXT BLOCK */
         line-height: 0;
         position: relative;
+        margin: auto;
         margin-bottom: 5px;
         transition: background 0.2s ease-out;
-        display: block;
     }
     /* (D) MATCH HEIGHT */
     
@@ -88,19 +44,42 @@
     .logo-txt {
         /* (E1) CENTER TEXT IN CIRCLE */
         position: absolute;
+        bottom: 50%;
         width: 100%;
-        left: -40px;
         text-align: center;
         /* (E2) THE FONT - NOT REALLY IMPORTANT */
         font-weight: 700;
         font-size: 40px;
         color: var(--logo-semicolon);
-        line-height: 10px;
-        writing-mode: sideways-lr;
     }
     
-    .nav .logo-txt {
-        font-size: 60px;
+    .nav a {
+        display: block;
+        width: 100%;
+    }
+    
+    .logo,
+    #menu {
+        margin: auto;
+        width: 100%;
+    }
+    
+    .logo {
+        flex-wrap: inherit;
+        margin: 15px 0 15px 0;
+    }
+    
+    .logo a {
+        font-size: 35px;
+        font-weight: 700;
+    }
+    
+    .logo a img {
+        display: block;
+        margin: auto;
+        pointer-events: none;
+        border-radius: 6px;
+        margin-bottom: 5px;
     }
     
     #theme-button-wrapper {
@@ -158,13 +137,6 @@
         border-radius: 5px;
     }
     
-    .active mark {}
-    
-    .active mark::after {
-        display: block;
-        border-bottom: 4px solid currentColor;
-    }
-    
     .active svg {
         stroke-width: 2.2px;
     }
@@ -196,8 +168,8 @@
         font-weight: 400;
     }
     
-    .hamburger {
-        display: none !important
+    button.hamburger {
+        display: none !important;
     }
     
     .hamburger-inner,
@@ -207,8 +179,8 @@
     }
     /*
 #menu .active {
-    font-weight: 500;
-    border-bottom: 2px solid currentColor;
+font-weight: 500;
+border-bottom: 2px solid currentColor;
 }
 */
     
@@ -244,26 +216,28 @@
             flex-direction: row;
         }
         .nav a {
-            width: 60%
+            width: auto;
         }
         .logo {
-            margin: 0;
-            width: auto;
-            margin-left: 20px !important;
+            display: flex;
+            width: 30%;
+            padding: 15px;
+            flex: 1;
+            align-self: flex-start;
+            margin-left: 10px !important;
         }
         .logo a {
-            width: auto;
+            text-align: left;
+            line-height: 55px;
+            padding: 10px;
         }
         .logo-circle {
             padding: 0;
             margin-bottom: 0;
-        }
-        .nav .logo-circle {
-            width: 90px;
-            height: 90px;
+            margin: auto 10px auto 10px;
         }
         .logo a {
-            font-size: 20px;
+            font-size: 30px;
             font-weight: 700;
             white-space: nowrap;
         }
@@ -282,12 +256,17 @@
             max-height: 0;
             transition: max-height 0.4s ease-in-out;
             overflow-y: hidden;
-            overflow-x: hidden;
+        }
+        .active-menu {
+            max-height: 1000px !important;
+            transition: max-height 0.4s ease-in-out;
+            display: block;
         }
         .active a {
             font-weight: 700;
-            background-color: rgba(0, 0, 0, 0);
+            background-color: rgb(0, 0, 0, 0);
             color: var(--primary);
+            border-radius: 5px;
         }
         .active-menu .active a {
             font-weight: 700;
@@ -295,18 +274,17 @@
             color: var(--logo-semicolon);
             border-radius: 5px;
         }
-        .active-menu {
-            max-height: 1000px !important;
-            transition: max-height 0.4s ease-in-out;
-            display: block;
-        }
         .menu-item {
             position: relative;
             vertical-align: middle;
             flex: 0;
             padding: 0 !important;
+            width: 100%;
         }
-        .hamburger {
+        .menu-item a {
+            width: 90%;
+        }
+        button.hamburger {
             display: block !important;
             position: absolute;
             top: 5px;
@@ -315,23 +293,32 @@
         }
     }
     
+    @media screen and (max-width: 450px) {}
+    
+    .logo {
+        width: auto;
+    }
+    
+    .nav {
+        display: block;
+    }
+    
+    #menu {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
     @media screen and (max-width: 400px) {
-        a.logo-circle {
+        .logo-circle {
             display: none;
         }
         .logo {
             flex: 0;
         }
         .logo a {
-            font-size: 24px;
-        }
-        .logo a::before {
-            content: ';';
-            display: block;
-            margin: -30px -30px -20px -25px;
-            font-size: 50px;
-            line-height: 50px;
-            font-family: 'Frank Ruhl Libre';
+            font-size: 34px;
         }
     }
     
