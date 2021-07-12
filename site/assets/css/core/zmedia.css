@@ -1,7 +1,6 @@
 @media screen and (max-width: 1024px) {
     .logo {
         margin: 20px auto;
-        padding: 0;
     }
     .wrapper {
         margin-left: 28vw;
@@ -86,7 +85,6 @@
     }
     .header {
         width: 100vw;
-        height: fit-content;
         top: 0;
         z-index: 9999;
         display: block;
@@ -98,7 +96,4 @@
             height: 11px;
         }
     }
-}
-
-
 }
