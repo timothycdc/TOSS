@@ -261,6 +261,11 @@ border-bottom: 2px solid currentColor;
                 font-weight: 700;
                 white-space: nowrap;
             }
+            .logo-circle {
+                width: 70px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
             .nav ul {
                 display: none;
             }
@@ -330,6 +335,7 @@ border-bottom: 2px solid currentColor;
             }
             .nav {
                 display: block;
+                overflow-y: hidden;
             }
             #menu {
                 width: 100%;
@@ -358,6 +364,10 @@ border-bottom: 2px solid currentColor;
                 position: absolute;
                 bottom: 28px;
                 width: 100%;
+            }
+            button.hamburger {
+                top: 16px;
+                right: 10px;
             }
         }
         
