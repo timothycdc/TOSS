@@ -74,7 +74,7 @@
         position: relative;
         margin-bottom: 5px;
         transition: background 0.2s ease-out;
-        display: inline;
+        display: block;
     }
     /* (D) MATCH HEIGHT */
     
@@ -88,14 +88,15 @@
     .logo-txt {
         /* (E1) CENTER TEXT IN CIRCLE */
         position: absolute;
-        bottom: 50%;
         width: 100%;
+        left: -40px;
         text-align: center;
         /* (E2) THE FONT - NOT REALLY IMPORTANT */
         font-weight: 700;
         font-size: 40px;
         color: var(--logo-semicolon);
         line-height: 10px;
+        writing-mode: sideways-lr;
     }
     
     .nav .logo-txt {
@@ -315,7 +316,7 @@
     }
     
     @media screen and (max-width: 400px) {
-        .logo-circle {
+        a.logo-circle {
             display: none;
         }
         .logo {
