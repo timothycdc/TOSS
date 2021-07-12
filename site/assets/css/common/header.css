@@ -123,7 +123,18 @@
     .menu-item a {
         display: inline-flex;
         letter-spacing: 0.2px;
-        padding: 0 15px;
+        padding: 0 20px 0 30px;
+        transition-property: background;
+        transition-duration: 0.3s ease;
+        border-radius: 5px;
+    }
+    
+    .menu-item a:hover {
+        background: rgba(126, 125, 125, 0.5);
+    }
+    
+    .menu-item .active a:hover {
+        background: var(--logo-bg)
     }
     
     .menu-item span {
@@ -249,7 +260,7 @@ border-bottom: 2px solid currentColor;
             position: relative;
             width: 40%;
             margin: 0;
-            padding: 0;
+            padding: 30px;
             flex: 1;
             padding-top: 80px;
             padding-bottom: 10px !important;
@@ -261,6 +272,10 @@ border-bottom: 2px solid currentColor;
             max-height: 1000px !important;
             transition: max-height 0.4s ease-in-out;
             display: block;
+        }
+        .active-menu a {
+            background: rgba(126, 125, 125, 0.2);
+            border-radius: 5px;
         }
         .active a {
             font-weight: 700;
@@ -284,6 +299,7 @@ border-bottom: 2px solid currentColor;
         }
         .menu-item a {
             width: 90%;
+            padding: 0 15px;
         }
         button.hamburger {
             display: block !important;
@@ -304,7 +320,7 @@ border-bottom: 2px solid currentColor;
         #menu {
             width: 100%;
             margin: 0;
-            padding: 0;
+            padding: 15px;
             overflow: hidden;
         }
         .menu-item {
