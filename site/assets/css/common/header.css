@@ -148,7 +148,7 @@
         }
         
         .active a {
-            font-weight: 700;
+            font-weight: 600;
             background-color: var(--logo-bg);
             color: var(--logo-semicolon);
             border-radius: 5px;
@@ -294,13 +294,13 @@ border-bottom: 2px solid currentColor;
                 border-radius: 5px;
             }
             .active a {
-                font-weight: 700;
+                font-weight: 600;
                 background-color: rgb(0, 0, 0, 0);
                 color: var(--primary);
                 border-radius: 5px;
             }
             .active-menu .active a {
-                font-weight: 700;
+                font-weight: 600;
                 background-color: var(--logo-bg);
                 color: var(--logo-semicolon);
                 border-radius: 5px;
