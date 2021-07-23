@@ -54,7 +54,7 @@ function activeToggle(ae) {
 
 function reset() {
     resultsAvailable = false;
-    resList.innerHTML = sInput.value = ''; // clear inputbox and searchResults
+    resList.innerHTML = sInput.value = 'yaaa'; // clear inputbox and searchResults
     sInput.focus(); // shift focus to input box
 }
 
