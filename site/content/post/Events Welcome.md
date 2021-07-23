@@ -37,4 +37,4 @@ Toggle Table of Contents: `Alt` + `C`
 If you're on Mac, substitute the `Alt` keys with both the `Control^` and `Option` keys ^_^
 
 # Features
-This website is screen-reader friendly for the vision-impaired. This website also disables animations on device request, also known as the *Reduce Motion* accessibility setting. The contrast ratios and colour scheme have also been optimised for clarity.
+This website is screen-reader friendly for the vision-impaired. We disable major animations on device request, also known as the *Reduce Motion* accessibility setting in iOS – to accommodate for those with motion sensitivity. Also, the contrast ratios and colour scheme have also been optimised for clarity.

@@ -15,7 +15,7 @@
     --hljs-bg: #1c1d21;
     --code-bg: #8cc271;
     --header-color: #ffd857;
-    --border: #535353;
+    --border: #e1e1e1;
     --const-yellow-color: #ffd857;
     --logo-semicolon: #ffd857;
     --logo-bg: #000;
@@ -25,10 +25,10 @@
 }
 
 .dark {
-    --header-color: #1d1e20;
+    --header-color: #18181C;
     --pattern1: #37383e;
     --pattern2: #3c3d3f;
-    --theme: #1d1e20;
+    --theme: #222326;
     --entry: #2e2e33;
     --primary: #ffd857;
     --secondary: rgba(255, 255, 255, 0.56);

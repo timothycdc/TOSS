@@ -7,9 +7,9 @@ var first, last, current_elem = null
 var resultsAvailable = false;
 
 // load our search index
-window.onload = function () {
+window.onload = function() {
     var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function () {
+    xhr.onreadystatechange = function() {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
                 var data = JSON.parse(xhr.responseText);
@@ -39,7 +39,7 @@ window.onload = function () {
 }
 
 function activeToggle(ae) {
-    document.querySelectorAll('.focus').forEach(function (element) {
+    document.querySelectorAll('.focus').forEach(function(element) {
         // rm focus class
         element.classList.remove("focus")
     });
@@ -59,7 +59,7 @@ function reset() {
 }
 
 // execute search as each character is typed
-sInput.onkeyup = function (e) {
+sInput.onkeyup = function(e) {
     // run a search query (for "term") every time a letter is typed
     // in the search box
     if (fuse) {
@@ -69,7 +69,7 @@ sInput.onkeyup = function (e) {
             let resultSet = ''; // our results bucket
 
             for (let item in results) {
-                resultSet += `<li class="post-entry"><header class="entry-header">${results[item].item.title}&nbsp;»</header>` +
+                resultSet += `<li class="post-entry"><header class="entry-header">${results[item].item.title}&nbsp;→</header>` +
                     `<a href="${results[item].item.permalink}" aria-label="${results[item].item.title}"></a></li>`
             }
 
@@ -84,13 +84,13 @@ sInput.onkeyup = function (e) {
     }
 }
 
-sInput.addEventListener('search', function (e) {
+sInput.addEventListener('search', function(e) {
     // clicked on x
     if (!this.value) reset()
 })
 
 // kb bindings
-document.onkeydown = function (e) {
+document.onkeydown = function(e) {
     let key = e.key;
     var ae = document.activeElement;
 

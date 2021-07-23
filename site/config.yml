@@ -1,6 +1,6 @@
 baseURL: "https://toss-my.netlify.app/"
 title: TOSS
-paginate: 5
+paginate: 6
 
 
 enableRobotsTXT: true
@@ -16,10 +16,10 @@ minify:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: ExampleSite
+    title: The Other Side of the Story
     description: "The Other Side of the Story"
     keywords: [Blog, Portfolio, PaperMod]
-    author: Me
+    author: TOSS
     # author: ["Me", "You"] # multiple authors
     images: ["<link or path of image for opengraph, twitter-cards>"]
     DateFormat: "January 2, 2006"

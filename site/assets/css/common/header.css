@@ -243,6 +243,12 @@ border-bottom: 2px solid currentColor;
             .nav a {
                 width: auto;
             }
+            ul .menu-item {
+                pointer-events: none;
+            }
+            .active-menu .menu-item {
+                pointer-events: auto;
+            }
             .logo {
                 display: flex;
                 width: 30%;
@@ -330,6 +336,16 @@ border-bottom: 2px solid currentColor;
         }
         
         @media screen and (max-width: 500px) {
+            .testwrap {
+                display: unset !important;
+                flex-wrap: unset !important;
+            }
+            .testwrap .home-article-wrapper {
+                width: 100% !important;
+            }
+            .home-article-wrapper {
+                padding-bottom: var(--gap) !important;
+            }
             .logo {
                 width: auto;
             }
