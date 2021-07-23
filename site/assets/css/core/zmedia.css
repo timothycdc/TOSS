@@ -66,6 +66,20 @@
 }
 
 @media screen and (max-width: 768px) {
+    .post-single,
+    .content-wrapper {
+        border: 0px
+    }
+    .content-wrapper .post-entry {
+        border: 1px solid var(--border);
+    }
+    .content-wrapper .page-header {
+        margin-bottom: 30px;
+    }
+    .content-wrapper .post-entry {
+        width: 90%;
+        margin: auto;
+    }
     .post-entry {
         border: 0px solid var(--border);
     }
