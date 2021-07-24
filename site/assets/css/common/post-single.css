@@ -28,7 +28,7 @@
 
 .post-meta {
     color: var(--secondary);
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
     flex-wrap: wrap;
     color: var(--content);

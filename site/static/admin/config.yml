@@ -11,12 +11,23 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "array"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Intro Blurb", name: "description", widget: "text"}
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list", hint: "Check the archive page to see the whole list of tags. Try not to repeat synonyms!"}
+      - {label: "Summary", name: "description", widget: "text", hint: "Write a short summary – it will be displayed on the home page or in card previews", required: false}
+      - {label: "Intro Blurb", name: "description", widget: "text", hint: "Write a short byline. This intro blurb is only seen when the full article is displayed.", required: false}
+      - {label: "Cover Image", name: "cover", widget: "object", fields:[
+        {label: "Image Link", name: "image", widget: "image", required: true},
+        {label: "Image Alt Text", name: "alt", widget: "text", required: true, hint: "Write a description of the image for accessibility/screen-readers or in case the image fails to load"},
+        {label: "Caption", name: "text", widget: "text", required: false, hint: "Describe your image (optional)"},
+      ]}
+      - {label: "Show Table of Contents", name: "showtoc", widget: "boolean", default: true, hint: "Turn off for pages where you don't want to show the drop-down table of contents"}
+      - {label: "Automatically open Table of Contents", name: "tocopen", widget: "boolean", default: false, hint: "Make sure you enable Table of Contents!"}
+      - {label: "Disable Share Buttons", name: "disableShare", widget: "boolean", default: false, hint: "Turn off share buttons"}
+      - {label: "Hide from Search", name: "searchHidden", widget: "boolean", default: false, hint: "Hide this page from the search feature."}
+      - {label: "Tags", name: "tags", widget: "list", hint: "Check the archive page to see the whole list of tags. Try not to repeat synonyms!", required: false}
       - {label: "Categories", name: "categories", widget: "list", hint: "It's best to put 1-2 categories, and not too many. Check the archive page for a list."}
+      - {label: "Body", name: "body", widget: "markdown"}
+      
   - name: "pages"
     label: "Pages"
     files:

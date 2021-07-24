@@ -9,7 +9,7 @@ cover:
     image: "/img/selfcareemo.jpg"
     alt: "books and coffee on a chair"
     caption: ""
-    relative: false # To use relative path for cover image, used in hugo Page-bundles
+
 
 
 categories: ['Mental Health']
@@ -46,4 +46,7 @@ Though spending time alone is beneficial, it is essential to mantain your social
 There are loads of advice and tips out there, including this post, to guide you on how to spend your time and be productive. Such guides are helpful during turbulent and uncertain times; it is important not to pressure yourself but do things at your own pace!
 
 ## Reminder:
-{{<rawhtml>}} <div style = 'border: 1.5px solid var(--border); padding: var(--gap); background-color: var(--tertiary);)'>You do not have to constantly seek happiness and it is completely okay to be alone and feel your feelings. Some days, you may not feel like getting out of bed, but that's ok. Progress is not linear, and you do not always have to seek joy and satisfaction. </div>{{</rawhtml>}}
+{{<callout>}}You do not have to constantly seek happiness and it is completely okay to be alone and feel your feelings. Some days, you may not feel like getting out of bed, but that's ok. Progress is not linear, and you do not always have to seek joy and satisfaction. {{</callout>}}
+
+
+

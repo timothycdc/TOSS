@@ -125,6 +125,10 @@
     .terms-tags .page-header {
         margin: 18px auto
     }
+    
+    .related-posts .post-entry {
+        margin-bottom: var(--gap);
+    }
     /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers

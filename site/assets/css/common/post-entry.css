@@ -77,6 +77,10 @@
     transform: scale(0.98);
 }
 
+.tag-entry {
+    /*margin-bottom: var(--gap);*/
+}
+
 .tag-entry .entry-cover {
     display: none;
 }

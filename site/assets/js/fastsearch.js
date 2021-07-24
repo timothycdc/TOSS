@@ -23,7 +23,9 @@ window.onload = function() {
                             'title',
                             'permalink',
                             'summary',
-                            'content'
+                            'content',
+                            'tags',
+                            'categories'
                         ]
                     };
                     if (params.fuseOpts) options = params.fuseOpts;

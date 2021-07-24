@@ -22,7 +22,11 @@ h1 {
     font-weight: 600;
 }
 
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 600;
 }
 
@@ -204,3 +208,12 @@ img.gallery {
     vertical-align: bottom;
 }
 */
+
+input[type="search"]::-webkit-search-cancel-button {
+    /* Remove default */
+    -webkit-appearance: none;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+}

@@ -40,7 +40,8 @@
 {{- $class = "post-entry tag-entry" }}
 {{- end }}
 
-<div  {{- if eq $class "post-entry" }} class="home-article-wrapper" {{- end }}> 
+<!--div  {{- if eq $class "post-entry" }} class="home-article-wrapper" {{ else }} class = "default-article-wrapper" {{- end }}--> 
+<div class = 'home-article-wrapper'>
 <article class="{{ $class }}">
   {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
   {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}

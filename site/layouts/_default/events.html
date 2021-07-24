@@ -24,35 +24,35 @@
 
 
     <header class="page-header">
-        <h2>Related Posts</h2>
+        <h2>{{i18n "relatedposts" | default "Related Posts"}}</h2>
     </header>
-
-    {{ range $value := $.Site.Taxonomies.categories.events }}
-
-
+    <div class='related-posts'>
+        {{ range $value := $.Site.Taxonomies.categories.events }}
 
 
 
-    <article class="post-entry">
-        {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }} {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
-        <header class="entry-header">
-            <h2>
-                {{- .Title }} {{- if .Draft }}
-                <div class="entry-isdraft"><sup>&nbsp;&nbsp;[draft]</sup></div>{{ end -}}
-            </h2>
-        </header>
-        {{- if (ne (.Param "hideSummary") true) }}
-        <section class="entry-content">
-            <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-        </section>
-        {{- end }} {{- if not (.Param "hideMeta") }}
-        <footer class="entry-footer"> 
-            {{- partial "post_meta.html" . -}}
-        </footer>
-        {{- end }}
-        <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-    </article>
 
+
+        <article class="post-entry">
+            {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }} {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
+            <header class="entry-header">
+                <h2>
+                    {{- .Title }} {{- if .Draft }}
+                    <div class="entry-isdraft"><sup>&nbsp;&nbsp;[draft]</sup></div>{{ end -}}
+                </h2>
+            </header>
+            {{- if (ne (.Param "hideSummary") true) }}
+            <section class="entry-content">
+                <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+            </section>
+            {{- end }} {{- if not (.Param "hideMeta") }}
+            <footer class="entry-footer">
+                {{- partial "post_meta.html" . -}}
+            </footer>
+            {{- end }}
+            <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+        </article>
+    </div>
 
 
     {{ end }} {{- end }}{{/* end main */}}
