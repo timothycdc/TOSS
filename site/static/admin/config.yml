@@ -10,20 +10,20 @@ collections: # A list of collections the CMS should be able to edit
     folder: "site/content/post" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string", comment: "Decide on a **unique ** title and stick to it!!! 😤  If you change the title after it's published, so does the link. This renders all old shared links useless. If someone shared/saved the link in the past, it will no longer work. Also, please, a unique title! Or we'll run into problems. " }
+      - {label: "Title", name: "title", widget: "string", hint: "Decide on a **unique ** title and stick to it!!! 😤  If you change the title after it's published, so does the link. This renders all old shared links useless. If someone shared/saved the link in the past, it will no longer work. Also, please, a unique title! Or we'll run into problems. " }
       - {label: "Slug", name: "slug", }
       - {label: "Author", name: "author", widget: "list", hint: "Multiple authors can be separated by spaces and commas 😆"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Summary", name: "summary", widget: "text", hint: "Write a short summary 📝 – it will be displayed on the home page or in card previews, but not when the full article is displayed. Leave blank to omit.", required: false}
       - {label: "Intro Blurb", name: "description", widget: "text", hint: "Write a short byline📍 – this intro blurb is only seen when the full article is displayed. Leave blank to omit.", required: false}
       - {label: "Cover Image", name: "cover", widget: "object", fields: [
-        {label: "Image Link", name: "image", widget: "image", required: true},
-        {label: "Image Alt Text", name: "alt", widget: "text", required: true, hint: "REQUIRED ⚠️: Write a description of the image for accessibility/screen readers, or in case the image fails to load"},
+        {label: "Image Link (REQUIRED)", name: "image", widget: "image", required: true},
+        {label: "Image Alt Text (REQUIRED)", name: "alt", widget: "text", required: true, hint: "REQUIRED ⚠️: Write a description of the image for accessibility/screen readers, or in case the image fails to load"},
         {label: "Caption", name: "text", widget: "text", required: false, hint: "Describe your image (optional). This will be featured in a caption under the cover image. Use only if necessary."},
       ]}
-      - {label: "Show Table of Contents", name: "showtoc", widget: "boolean", default: true, hint: "📖 Turn off for pages where you don't want to show the drop-down table of contents"}
-      - {label: "Automatically open Table of Contents", name: "tocopen", widget: "boolean", default: false, hint: "Make sure you enable Table of Contents!"}
-      - {label: "Disable Share Buttons", name: "disableShare", widget: "boolean", default: false, hint: "Turn off share buttons"}
+      - {label: "Show Table of Contents", name: "showtoc", widget: "boolean", default: true, hint: "Turn off for pages where you don't want to show the drop-down table of contents"}
+      - {label: "Automatically open Table of Contents", name: "tocopen", widget: "boolean", default: false, hint: "Make sure you enable Table of Contents above if you want this feature!"}
+      - {label: "Disable Share Buttons", name: "disableShare", widget: "boolean", default: false, hint: "Turn off share buttons (kinda confusing, I know. Just leave it on for max traffic)"}
       - {label: "Hide from Search", name: "searchHidden", widget: "boolean", default: false, hint: "Hide this page from the search feature. 🤫"}
       - {label: "Tags", name: "tags", widget: "list", hint: "Check the archive page to see the whole list of tags. ‼️ Try not to repeat synonyms!", required: false}
       - {label: "Categories", name: "categories", widget: "list", hint: "It's best to put 1-2 categories, and not too many 🛑 ✋. Check the archive page for a list."}
@@ -32,65 +32,11 @@ collections: # A list of collections the CMS should be able to edit
   - name: "pages"
     label: "Pages"
     files:
-      - file: "site/content/_index.md"
-        label: "Home Page"
-        name: "home"
+      - file: "site/content/about.md"
+        label: "About Page"
+        name: "About"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Subtitle, name: subtitle, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: "Blurb", name: blurb, widget: object, fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
-          - {label: "Intro", name: intro, widget: object, fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
-          - {label: "Products", name: products, widget: list, fields: [
-              {label: "Image", name: "image", widget: "image"},
-              {label: "Text", name: "text", widget: "text"}]}
-          - {label: "Values", name: "values", widget: "object", fields: [
-              {label: "Heading", name: "heading", widget: string},
-              {label: "Text", name: "text", widget: "text"}]}
-      - file: "site/content/contact/_index.md"
-        label: "Contact Page"
-        name: "contact"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Logo, name: logo, widget: image}
-          - {label: Body, name: body, widget: markdown}
-          - label: Contact Entries
-            name: contact_entries
-            widget: list
-            fields:
-              - label: Heading
-                name: heading
-                widget: string
-              - label: Text
-                name: text
-                widget: text
-      - file: "site/content/products/_index.md"
-        label: "Products Page"
-        name: "products"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
-          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
-          - {label: Full_image, name: full_image, widget: image}
-          - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
-      - file: "site/content/values/_index.md"
-        label: "Values Page"
-        name: "values"
-        fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - label: Values
-            name: values
-            widget: list
-            fields:
-              - {label: Heading, name: heading, widget: string}
-              - {label: Text, name: text, widget: text}
-              - {label: Image, name: imageUrl, widget: image}
+          - {label: "Title", name: "title", widget: string}
+          - {label: "Body", name: "body", widget: "markdown"}
+
+      
