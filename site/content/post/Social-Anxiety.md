@@ -1,5 +1,5 @@
 ---
-author: 'TOSS'
+author: ['TOSS']
 title: Social Anxiety
 slug: social-anxiety
 date: 2021-04-11

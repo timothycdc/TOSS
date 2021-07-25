@@ -11,7 +11,7 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Author", name: "author", widget: "list"}
+
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Summary", name: "summary", widget: "text", hint: "Write a short summary – it will be displayed on the home page or in card previews", required: false}
       - {label: "Intro Blurb", name: "description", widget: "text", hint: "Write a short byline. This intro blurb is only seen when the full article is displayed.", required: false}

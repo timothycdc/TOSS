@@ -1,5 +1,5 @@
 ---
-author: 'TOSS'
+author: ['TOSS']
 title: Emotional Health
 slug: emotional-health
 date: 2021-03-14
@@ -47,6 +47,3 @@ There are loads of advice and tips out there, including this post, to guide you 
 
 ## Reminder:
 {{<callout>}}You do not have to constantly seek happiness and it is completely okay to be alone and feel your feelings. Some days, you may not feel like getting out of bed, but that's ok. Progress is not linear, and you do not always have to seek joy and satisfaction. {{</callout>}}
-
-
-

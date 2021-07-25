@@ -1,5 +1,5 @@
 ---
-author: 'TOSS'
+author: ['TOSS']
 title: Major Depressive Disorder
 date: 2021-01-29
 description: >-
