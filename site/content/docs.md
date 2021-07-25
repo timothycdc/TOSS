@@ -246,7 +246,7 @@ This page shows all the posts categorised under 'Events' as a handy reference. T
 {{<rawhtml>}}<br>{{</rawhtml>}}
 
 ## 5. Sustainability and keeping our costs free
-Every time you hit publish, it takes around 2 minutes for the server to rebuild and refresh the blog. Our free plan on Netlify allows for 300 build minutes per month. By the time I'm done with this website, I'd have used 35-40 build minutes on maintenance. This leaves us with 260+ minutes, equivalent to 130 publishings a month. That should be pretty much enough if we're careful with the use of the blog. Keep it in moderation!
+Every time you save a draft or publish a post, it takes around a minute for the server to rebuild and refresh the blog. Our free plan on Netlify allows for 300 build minutes per month. By the time I'm done with this website, I'd have used 35-40 build minutes on maintenance. This leaves us with 260+ minutes, equivalent to 260 actions per month. That should be pretty much enough if we're careful with the use of the blog. Keep it in moderation!
 
 ### Accessibility
 As a website that focuses on mental health topics, we need to ensure our message reaches the widest audience possible. This is why I've made the website with high-contrast colours, spacious fonts, screen reader support and alt descriptions. I hope you can do your part too! Just fill in those alt-texts for images and we should be good.
