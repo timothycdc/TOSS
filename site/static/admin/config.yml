@@ -11,14 +11,14 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Author", name: "author", widget: "list"}
+      - {label: "Author", name: "author", widget: "list", hint: "Multiple authors can be separated by spaces and commas"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Summary", name: "summary", widget: "text", hint: "Write a short summary – it will be displayed on the home page or in card previews", required: false}
-      - {label: "Intro Blurb", name: "description", widget: "text", hint: "Write a short byline. This intro blurb is only seen when the full article is displayed.", required: false}
+      - {label: "Summary", name: "summary", widget: "text", hint: "Write a short summary – it will be displayed on the home page or in card previews, but not when the full article is displayed. Leave blank to omit.", required: false}
+      - {label: "Intro Blurb", name: "description", widget: "text", hint: "Write a short byline. This intro blurb is only seen when the full article is displayed. Leave blank to omit.", required: false}
       - {label: "Cover Image", name: "cover", widget: "object", fields: [
         {label: "Image Link", name: "image", widget: "image", required: true},
-        {label: "Image Alt Text", name: "alt", widget: "text", required: true, hint: "Write a description of the image for accessibility/screen-readers or in case the image fails to load"},
-        {label: "Caption", name: "text", widget: "text", required: false, hint: "Describe your image (optional)"},
+        {label: "Image Alt Text", name: "alt", widget: "text", required: true, hint: "REQUIRED: Write a description of the image for accessibility/screen readers, or in case the image fails to load"},
+        {label: "Caption", name: "text", widget: "text", required: false, hint: "Describe your image (optional). This will be featured in a caption under the cover image. Use only if necessary."},
       ]}
       - {label: "Show Table of Contents", name: "showtoc", widget: "boolean", default: true, hint: "Turn off for pages where you don't want to show the drop-down table of contents"}
       - {label: "Automatically open Table of Contents", name: "tocopen", widget: "boolean", default: false, hint: "Make sure you enable Table of Contents!"}
