@@ -35,6 +35,12 @@
     .home-article-wrapper {
         padding-bottom: var(--gap);
     }
+    .testwrap .default-article-wrapper {
+        width: 100%;
+    }
+    .default-article-wrapper {
+        padding-bottom: var(--gap);
+    }
 }
 
 @media (prefers-reduced-motion) {
@@ -98,6 +104,9 @@
         padding: calc(var(--gap));
     }
     .testwrap .home-article-wrapper {
+        width: 50%;
+    }
+    .testwrap .default-article-wrapper {
         width: 50%;
     }
     .first-entry {

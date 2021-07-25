@@ -16,15 +16,15 @@ collections: # A list of collections the CMS should be able to edit
     preview_path: post/{{slug}}
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string", hint: "Title of the article goes here." }
+      - {label: "Title", name: "title", widget: "string", hint: "Title of the article goes here.  Choose one stick to it!!! 😤  If you change the title after it's published, so does the link. This renders all old shared links useless. " }
       #- {label: "Slug", name: "slug", widget: "string", pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$','A slug can have no spaces or special characters'], hint: "The slug decides the link/URL of the post! Make it unique, with lowercase letters and dashes only. Example: a slug for a post titled 'Mental Health Support' can be written as 'm-health-support' Choose one stick to it!!! 😤  If you change the title after it's published, so does the link. This renders all old shared links useless. "}
       - {label: "Author", name: "author", widget: "list", hint: "Multiple authors can be separated by commas 😆"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Summary", name: "summary", widget: "text", hint: "Write a short summary 📝 – it will be displayed on the home page or in card previews, but not when the full article is displayed. Leave blank to omit.", required: false}
+      - {label: "Summary", name: "summary", widget: "text", hint: "⚠️ BUGGY FEATURE: Write a short summary only if EXTREMELY necessary. I advise you to avoid writing one if you can.  It will be displayed on the home page or in card previews, but not when the full article is displayed. If you must, make it 2 sentences. Minimum of 10 words! Leave blank to omit.", required: false}
       - {label: "Intro Blurb", name: "description", widget: "text", hint: "Write a short byline📍 – this intro blurb is only seen when the full article is displayed. Leave blank to omit.", required: false}
       - {label: "Cover Image", name: "cover", widget: "object", fields: [
         {label: "Image Link (REQUIRED)", name: "image", widget: "image", required: true},
-        {label: "Image Alt Text (REQUIRED)", name: "alt", widget: "text", required: true, hint: "REQUIRED ⚠️: Write a description of the image for accessibility/screen readers, or in case the image fails to load"},
+        {label: "Image Alt Text (REQUIRED)", name: "alt", widget: "text", required: true, hint: "⚠️ REQUIRED : Write a description of the image for accessibility/screen readers, or in case the image fails to load"},
         {label: "Caption", name: "text", widget: "text", required: false, hint: "Describe your image (optional). This will be featured in a caption under the cover image. Use only if necessary."},
       ]}
       - {label: "Show Table of Contents", name: "showtoc", widget: "boolean", default: true, hint: "Turn off for pages where you don't want to show the drop-down table of contents"}

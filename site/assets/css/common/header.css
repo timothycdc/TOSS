@@ -346,6 +346,12 @@ border-bottom: 2px solid currentColor;
             .home-article-wrapper {
                 padding-bottom: var(--gap) !important;
             }
+            .testwrap .default-article-wrapper {
+                width: 100% !important;
+            }
+            .default-article-wrapper {
+                padding-bottom: var(--gap) !important;
+            }
             .logo {
                 width: auto;
             }
