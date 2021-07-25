@@ -108,4 +108,11 @@
         //     font-size: 30px;
         // }
     }
+    //I'll have to manually copy this from tachyon's site themselves, fuck you victor/kaldi one-click-hugo-cms theme!
+    & code {
+        font-family: Consolas, monaco, monospace;
+        background-color: var(--grey-1);
+        padding: 5px;
+        border-radius: 4px;
+    }
 }
