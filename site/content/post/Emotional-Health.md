@@ -1,16 +1,17 @@
 ---
+# Decide on a **unique ** title and stick to it!!! 😤  If you change the title after it's published, so does the link. This renders all old shared links useless. If someone shared/saved the link in the past, it will no longer work. Also, please, a unique title! Or we'll run into problems. 
+title: Emotional Health
+slug: emotional-health
 author:
   - TOSS
 date: 2021-03-14
 summary: "We discuss tips for self-care and help in this post. "
 description: "Tips for self-care and help "
-showtoc: true
-slug: emotional-health
-title: Emotional Health
 cover:
   image: /img/selfcareemo.jpg
   alt: books and coffee on a chair
   caption: ""
+showtoc: true
 tocopen: false
 disableShare: false
 searchHidden: false
