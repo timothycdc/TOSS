@@ -1,6 +1,6 @@
 ---
 # Decide on a **unique ** title and stick to it!!! 😤  If you change the title after it's published, so does the link. This renders all old shared links useless. If someone shared/saved the link in the past, it will no longer work. Also, please, a unique title! Or we'll run into problems. 
-title: Emotional Healthd
+title: Emotional Health
 slug: emotional-health
 author:
   - TOSS
