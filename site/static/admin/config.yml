@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
 
+logo_url: https://toss-my.netlify.app/favicon-png.png
 media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 site_url: https://toss-my.netlify.app
