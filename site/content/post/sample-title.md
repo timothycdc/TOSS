@@ -15,12 +15,6 @@ searchHidden: false
 
 ## Heading 2
 
-### Heading 3
-
-#### Heading 4
-
-##### Heading 5
-
 **BOLD**
 
 *ITALIC*
@@ -32,15 +26,12 @@ searchHidden: false
 > Blockquote
 
 * Bullet List
-
-No more
+* Hey!
 
 1. Numbered List
 2. Another! 
 3. What
 
- 
-
-![]()
+![Yes](img/cute-plant.jpg "Caption")
 
 [](google.com)
