@@ -83,13 +83,16 @@
     }
     /* Blockquotes */
     & blockquote {
-        background-color: var(--grey-1);
+        //background-color: var(--grey-1);
         display: block;
-        border-radius: var(--border-radius);
-        padding: var(--spacing-medium);
-        color: var(--primary);
-        font-weight: 700;
+        // border-radius: var(--border-radius);
+        // padding: var(--spacing-medium);
+        //color: var(--primary);
+        //font-weight: 700;
         font-size: 1.25rem;
+        margin: 20px 0;
+        padding: 0 14px;
+        border-inline-start: 3px solid var(--primary);
         ;
         margin-bottom: var(--spacing-medium);
         & p {
