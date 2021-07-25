@@ -28,6 +28,9 @@ Welcome to Netlify CMS! CMS, short for Content Management System, is a page wher
 Fill in the initial details – I've included ample instructions on how not to go wrong.
 In the top menu you will find a setting to upload a cover image! See the [image]({{< relref "#images" >}}) section of this post for more details.
 
+**IMPORTANT NOTICE!**
+There's been a bug recently– when you create a new article there might be some 'required' fields that need to be turned on and off a few times for good measure before being able to save a post.
+
 ###### FIGURE 1.2 ↓
 ![Screenshot of Netlify CMS](../img/ins-2.png)
 
