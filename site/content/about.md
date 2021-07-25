@@ -2,8 +2,8 @@
 title: "About"
 layout: "post"
 url: "/about/"
-summary: about
-author: TOSS
+summary: About
+author: ['TOSS']
 ShowBreadCrumbs: false
 ---
 
