@@ -16,7 +16,7 @@ Hi, Timo here!
 I've written this guide here so you can help contribute to TOSS.
 
 ## 1. Blast Off!
-Visit the [admin page](toss-my.netlify.app/admin/) and sign in. Click "login with Netlify Identity". For safety reasons the login details aren't on this page (obviously). Go and ask the right people for it ;)
+Visit the [admin page](../admin/) and sign in. Click "login with Netlify Identity". For safety reasons the login details aren't on this page (obviously). Go and ask the right people for it ;)
 
 ###### FIGURE 1.1 ↓
 ![Screenshot of Netlify CMS](../img/ins-1.png)
