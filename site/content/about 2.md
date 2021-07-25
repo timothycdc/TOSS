@@ -179,7 +179,7 @@ Result:
 
 {{<callout>}} Your boxed text goes here {{</callout>}}
 
-{{<rawhtml>}}<br>{{</rawddhtml>}}
+{{<rawhtml>}}<br>{{</rawhtml>}}
 
 ###  With Great Power Comes Great Responsibility! ⚠️ ☢️
 By going into Markdown Mode, you wield immense power over the site. This means you also have a bad chance of breaking it. Please, please, please ensure that any text in the curly brackets are properly spelt and the chevrons '<' and '>' are pointing in the right direction etc. Otherwise, the server will refuse to update and will throw an error as shown in my server page at [Figure 3.2]({{< relref "#figure-32-">}} )
