@@ -21,9 +21,9 @@ Visit the [admin page](toss-my.netlify.app/admin/) and sign in. Click "login wit
 ###### FIGURE 1.1 ↓
 ![Screenshot of Netlify CMS](../img/ins-1.png)
 
-Welcome to Netlify CMS! CMS, short for Content Management System, is a page where authors edit their posts before publishing them to a blog. If you've written on Wordpress blogs in the past, some of the features and words will sound familiar to you.
+Welcome to Netlify CMS! CMS, short for Content Management System, is a page where authors edit their posts before publishing them to a blog. If you've written on Wordpress blogs before in the past, some of the features and words will sound fleetingly familiar to you.
 
-[Figure 1.1]({{< relref "#figure-11-">}} ) shows what your homepage looks like. It shows a list of all the posts on the website, which are all editable. Now click 'New Post'.
+[Figure 1.1]({{< relref "#figure-11-">}} ) shows what your homepage looks like. It displays a list of all the posts on the website, which are all editable. Now click 'New Post'.
 
 Fill in the initial details – I've included ample instructions on how not to go wrong.
 In the top menu you will find a setting to upload a cover image! See the [image]({{< relref "#images" >}}) section of this post for more details.
@@ -45,6 +45,7 @@ Scroll down to the **Body** Section as shown in [Figure 1.2.]({{< relref "#figur
 
 When you're done with your writing, hit 'Publish Now'. Try to avoid 'Publish and Create New' or 'Duplicate' unless you really know what you're doing.
 
+It will take 2-3 minutes for the server to update. **Be patient!**
 
 
 
@@ -55,7 +56,7 @@ When you're done with your writing, hit 'Publish Now'. Try to avoid 'Publish and
 
 ## 2. Postmaking – Things to note
 ### Images
-Images should around to Full-HD resolution (1920 x 1080), which translates to a file size around 500kB. This size strikes a good balance between quality and website loading times. Don't include too many pictures per page –– that'll slow the page down and make site visitors scroll a fair bit more than necessary.
+Images should be around to Full-HD resolution (1920 x 1080), which translates to a file size in the 200kB to 600kB range. This size strikes a good balance between quality and website loading times. Don't include too many pictures per article –– that'll slow the page down and make site visitors scroll a fair bit more than necessary.
 
 You can find royalty-free illustration images on [Unsplash](https://www.unsplash.com), which are colour-graded for that svelte, high-production-level aesthetic. If you look carefully, you'll see an option to download the photo from Unsplash at Medium resolution, which is perfect for the blog. You can always compress your own pictures using an image compressor online.
 
@@ -97,7 +98,7 @@ More creative power? Willing to dive down into the nitty-gritty? I appreciate yo
 Those with basic programming knowledge will get used to this rather quickly. (Cyn Thea, sorry you hate CS.) The following tutorials below only work when you switch to Markdown mode. Anyway, here goes...
 
 ### Embed YouTube
-Get your YouTube link and copy out the string of characters after the equals sign. That is the unique identifier which we can sub into this shortcode.
+Get your YouTube link and copy out the string of characters after the equals sign. This string is the video's unique identifier which we can then sub into this shortcode.
 
 
 
@@ -187,7 +188,7 @@ By going into Markdown Mode, you wield immense power over the site. This means y
 ###### FIGURE 3.2 ↓
  ![Screenshot of Netlify CMS](../img/ins-7.png)
 ###### You won't see this page, but keep in mind it has been the cause of my recent trauma.
-It always helps to check the site a few minutes after you publish an article to make sure it shows up properly. If it doesnt, check your code again, or if you can't find out what's wrong, just throw your article back into 'In Review' status.
+It always helps to check the site a few minutes after you publish an article to make sure it shows up properly. If it doesnt, check your code again, or if you can't find out what's wrong, just throw your article back into 'In Review' status. Then ask someone more competent than you to help you fix the issue.
 
 ## 4. Other Pages on The Site
 ### About Page
@@ -214,6 +215,13 @@ As a website that focuses on mental health topics, we need to ensure our message
 {{<rawhtml>}}<br>{{</rawhtml>}}
 
 ## 6. Perfectionism – a brief, honest discourse
-I'll be honest with you, building this website was good fun. I've spent a few hundred hours tinkering away, and learnt so much throughout making this project. There will always be tiny annoying issues in the code, and cool new features to implement, and beautiful dreams that will forever remain in the pipeline – but such is life without the lack of blemishes, and I don't think I can fix too many things to make them foolproof. Reach out to me only if you find a really terrible bug or problem in the code, one that breaks the site. I haven't found any so far
+I'll be honest with you, building this website was good fun. I've spent a few hundred hours tinkering away, I've learnt so much from tutorials, forums, and videos, finding all sorts of ways to make things work. There will always be tiny annoying issues in the code, and cool new features to implement, and beautiful dreams that will forever remain in the pipeline – but such is life without the lack of blemishes, and I don't think I can fix too many things to make them foolproof. Reach out to me only if you find a really terrible bug or problem,  which breaks the site. I haven't found any so far. And earlier as I mentioned, I won't be adding any more major features after this.
 
-### I Simply Do Not Dream of Labour
+This isn't goodbye though! I'll still be around to contribute and maintain the site, it's just that I'll have more prioritised commitments of time to projects other than this.
+
+Thank you for putting up with me reading through this and my other very naggy comments in the CMS fields. 🥺👉🏻👈🏻
+
+Here's to more!
+
+*Signing off,*
+{{<rawhtml>}}<div style="font-family: cursive; margin-top: -15px;">Admin </div>{{</rawhtml>}}
