@@ -319,7 +319,7 @@
 }
 
 .toc li ul {
-    margin-inline-start: var(--gap);
+    margin-inline-start: calc(var(--gap)/1.5);
 }
 
 .toc summary:focus {
