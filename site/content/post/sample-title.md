@@ -20,3 +20,15 @@ searchHidden: false
 #### Heading 4
 
 ##### Heading 5
+
+**BOLD**
+
+*ITALIC*
+
+`CODE`
+
+[Hyperlink](google.com)
+
+> Blockquote
+
+[](google.com)
