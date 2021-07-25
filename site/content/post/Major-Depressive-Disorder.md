@@ -1,7 +1,7 @@
 ---
 author: ['TOSS']
 title: Major Depressive Disorder
-date: 2021-01-29
+date: 2021-01-29T09:06:24.902Z
 description: >-
   The medical definition, the symptoms, the statistics and our story
 

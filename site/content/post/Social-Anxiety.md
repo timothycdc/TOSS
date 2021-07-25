@@ -2,7 +2,7 @@
 author: ['TOSS']
 title: Social Anxiety
 slug: social-anxiety
-date: 2021-04-11
+date: 2021-04-11T09:06:24.902Z
 description: "Medical definition, statistics, and our story"
 
 cover:

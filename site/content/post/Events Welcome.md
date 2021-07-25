@@ -2,7 +2,7 @@
 author: ['Admin']
 slug: events-welcome-test
 title: Event Welcome
-date: 2021-07-12
+date: 2021-07-21T09:06:24.902Z
 description: ""
 
 cover:
