@@ -1,22 +1,24 @@
 ---
-author: ['TOSS']
-title: Emotional Health
-slug: emotional-health
+author:
+  - TOSS
 date: 2021-03-14
-description: "Tips for self-care and help"
-
+summary: "We discuss tips for self-care and help in this post. "
+description: Tips for self-care and help ~
+showtoc: true
+slug: emotional-health
+title: Emotional Health
 cover:
-    image: "/img/selfcareemo.jpg"
-    alt: "books and coffee on a chair"
-    caption: ""
-
-
-
-categories: ['Mental Health']
-tags: ['Emotional Health', 'Tips']
-
-summary: "We discuss tips for self-care and help in this post."
-
+  image: /img/selfcareemo.jpg
+  alt: books and coffee on a chair
+  caption: ""
+tocopen: false
+disableShare: false
+searchHidden: false
+tags:
+  - Emotional Health
+  - Tips
+categories:
+  - Mental Health
 ---
 
 
