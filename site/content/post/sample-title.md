@@ -33,5 +33,3 @@ searchHidden: false
 3. What
 
 ![Yes](img/cute-plant.jpg "Caption")
-
-[](google.com)
