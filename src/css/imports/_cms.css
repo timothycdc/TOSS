@@ -84,6 +84,7 @@
     /* Blockquotes */
     & blockquote {
         //background-color: var(--grey-1);
+        border-inline-start: 3px solid var(--primary) !important;
         display: block;
         // border-radius: var(--border-radius);
         // padding: var(--spacing-medium);
@@ -92,7 +93,7 @@
         font-size: 1.25rem;
         margin: 20px 0;
         padding: 0 14px;
-        border-inline-start: 3px solid var(--primary);
+        border-inline-start: 3px solid var(--primary) !important;
         ;
         margin-bottom: var(--spacing-medium);
         & p {
