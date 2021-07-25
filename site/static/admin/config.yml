@@ -6,7 +6,7 @@ media_folder: "site/static/img" # Folder where user uploaded files should go
 public_folder: "img"
 site_url: https://toss-my.netlify.app
 publish_mode: editorial_workflow
-
+show_preview_links: false
 
 collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
