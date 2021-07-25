@@ -13,8 +13,13 @@ showtoc: true
 tocopen: false
 disableShare: false
 searchHidden: false
+tags:
+  - Reference
+  - Code
 categories:
   - Help
+  - Test
+  - Syntax
 ---
 # Code Highlighting
 
