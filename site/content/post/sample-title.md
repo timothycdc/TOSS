@@ -39,8 +39,8 @@ No more
 2. Another! 
 3. What
 
+ 
 
-
-  ![](img/event-welcome.jpg)
+![]()
 
 [](google.com)
