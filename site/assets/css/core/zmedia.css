@@ -74,7 +74,7 @@
 @media screen and (max-width: 768px) {
     .page-header,
     .post-header {
-        margin: 50px auto calc(var(--content-gap)*1.5) auto;
+        margin: 10px auto calc(var(--content-gap)*1.5) auto;
     }
     .post-single,
     .content-wrapper {
@@ -149,6 +149,5 @@
         top: 0;
         z-index: 9999;
         display: block;
-        position: relative;
     }
 }

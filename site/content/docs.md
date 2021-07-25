@@ -182,6 +182,42 @@ Result:
 
 {{<rawhtml>}}<br>{{</rawhtml>}}
 
+### Citations
+Add handy references to your writing. All reference sources automatically show up on the footer of the page regardless of where they are. Hint: the thing that separates the link from the reference is the colon (:). Now click those superscript numbers and be teleported to the footer!
+
+Code:
+
+````
+Maybe The Real Treasure Was the Friends We Made Along the Way.[^1]
+[^1]:Know Your Meme, 2008. https://knowyourmeme.com/memes/maybe-the-real-treasure-was-the-friends-we-made-along-the-way
+
+Never Gonna Give You Up.[^2]
+[^2]:Rick Astley, 1987. https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+> *"Hey it's Michael Jackson I'm messaging you from a private account. I'm not really dead can you cash app me $600 so I can come back to the United States and put out more music"* [^3]
+
+> *Hee Hee!* [^3]
+[^3]:Some random Instagram Screenshot [here](../hidden/mjfake.jpeg)
+
+````
+
+Result:
+
+Maybe The Real Treasure Was the Friends We Made Along the Way.[^1]
+[^1]:Know Your Meme, 2008. https://knowyourmeme.com/memes/maybe-the-real-treasure-was-the-friends-we-made-along-the-way
+
+Never Gonna Give You Up.[^2]
+[^2]:Rick Astley, 1987. https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
+
+> *"Hey it's Michael Jackson I'm messaging you from a private account. I'm not really dead can you cash app me $600 so I can come back to the United States and put out more music"* [^3]
+
+> *Hee Hee!* [^3]
+[^3]:Some random Instagram Screenshot [here](../hidden/mjfake.jpeg)
+
+
+{{<rawhtml>}}<br>{{</rawhtml>}}
+
 ###  With Great Power Comes Great Responsibility! ⚠️ ☢️
 By going into Markdown Mode, you wield immense power over the site. This means you also have a bad chance of breaking it. Please, please, please ensure that any text in the curly brackets are properly spelt and the chevrons '<' and '>' are pointing in the right direction etc. Otherwise, the server will refuse to update and will throw an error as shown in my server page at [Figure 3.2]({{< relref "#figure-32-">}} )
 
@@ -198,7 +234,7 @@ You can edit this page inside Netlify CMS also! Just click 'Pages' instead of 'P
 This page automatically updates itself whenever new posts are made. No need to worry about modifying this page!
 
 ### Events Pages
-This page shows all the posts categorised under 'Events' as a handy reference. There is also a public Google Calendar embedded! Right now at the time of writing, it points to a random calendar, Phases of the Moon. I will sync it with TOSS's Google Calendar soon. The workflow idea is like this:
+This page shows all the posts categorised under 'Events' as a handy reference. There is also a public Google Calendar embedded! Right now at the time of writing, it points to a random calendar, Phases of the Moon (lol I had to pick a random one to test that it works). I will sync it with TOSS's Google Calendar soon. The workflow idea is like this:
 
 * The team discusses dates to hold events on, and schedules them accordingly in the Google Calendar.
 * This TOSS site automatically updates its calendar for the public to view.
@@ -215,7 +251,7 @@ As a website that focuses on mental health topics, we need to ensure our message
 {{<rawhtml>}}<br>{{</rawhtml>}}
 
 ## 6. Perfectionism – a brief, honest discourse
-I'll be honest with you, building this website was good fun. I've spent a few hundred hours tinkering away, I've learnt so much from tutorials, forums, and videos, finding all sorts of ways to make things work. There will always be tiny annoying issues in the code, and cool new features to implement, and beautiful dreams that will forever remain in the pipeline – but such is life without the lack of blemishes, and I don't think I can fix too many things to make them foolproof. Reach out to me only if you find a really terrible bug or problem,  which breaks the site. I haven't found any so far. And earlier as I mentioned, I won't be adding any more major features after this.
+I'll be honest with you, building this website was good fun. I've spent a few hundred hours tinkering away, learning so much from tutorials, forums, and videos; countless attempts finding all sorts of ways to make things work. There will always be tiny annoying issues in the code, and cool new features to implement, and beautiful dreams that will forever remain in the pipeline – but such is life without the lack of blemishes, and I don't think I can fix too many things to make them foolproof. Reach out to me only if you find a really terrible bug or problem,  which breaks the site. I haven't found any so far. And earlier as I mentioned, I won't be adding any more major features after this.
 
 This isn't goodbye though! I'll still be around to contribute and maintain the site, it's just that I'll have more prioritised commitments of time to projects other than this.
 
