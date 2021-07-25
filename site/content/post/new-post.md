@@ -8,7 +8,7 @@ description: Intro Blurb Test
 cover:
   image: img/cute-plant.jpg
   alt: Photo of decorative plants
-  text: Optional Caption
+  text: Optional Caption Test
 showtoc: true
 tocopen: false
 disableShare: false
