@@ -243,11 +243,15 @@ border-bottom: 2px solid currentColor;
             .nav a {
                 width: auto;
             }
+            .menu-item {
+                display: none;
+            }
             ul .menu-item {
                 pointer-events: none;
             }
             .active-menu .menu-item {
                 pointer-events: auto;
+                display: block;
             }
             .logo {
                 display: flex;
