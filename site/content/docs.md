@@ -218,6 +218,24 @@ Never Gonna Give You Up.[^2]
 > *Hee Hee!* [^3]
 [^3]:Some random Instagram Screenshot [here](../hidden/mjfake.jpeg)
 
+{{<rawhtml>}}<br>{{</rawhtml>}}
+### Any RAW HTML
+This one is for the programmers :)
+
+Code:
+
+```html
+{{<rawhtml>}}{{&lt;rawhtml&gt;}}
+   &lt;mark&gt; Highlighted stuff&lt;/mark&gt;
+   &lt;div style = 'font-family: Verdana, sans-serif'&gt; New styles! &lt;/div&gt;
+{{&lt;/rawhtml&gt;}}{{</rawhtml>}}
+
+````
+
+Result:
+
+ {{<rawhtml>}} <mark>Highlighted stuff</mark>  <div style = 'font-family: Verdana, sans-serif'>New styles!</div> {{</rawhtml>}}
+
 
 {{<rawhtml>}}<br>{{</rawhtml>}}
 
@@ -226,8 +244,8 @@ By going into Markdown Mode, you wield immense power over the site. This means y
 
 ###### FIGURE 3.2 ↓
  ![Screenshot of Netlify CMS](../img/ins-7.png)
-###### You won't see this page, but keep in mind it has been the cause of my recent trauma.
-It always helps to check the site a few minutes after you publish an article to make sure it shows up properly. If it doesnt, check your code again, or if you can't find out what's wrong, just throw your article back into 'In Review' status. Then ask someone more competent than you to help you fix the issue.
+###### You won't see this page, but I will; it has been the cause of my recent trauma.
+It always helps to check the site a few minutes after you publish an article to make sure it shows up properly. If it doesnt, check your code again. If you still can't find out what's wrong, just throw your article back into 'In Review' status. Then ask someone more competent than you to help you fix the issue.
 
 ## 4. Other Pages on The Site
 ### About Page
