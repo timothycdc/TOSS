@@ -1,6 +1,6 @@
 ---
 title: "Blog Writing Help"
-layout: "post"
+layout: "hidden"
 url: "/blog-write-help/"
 summary: Guide for personnel only
 description: 26 July 2021 &nbsp|&nbsp 2:54AM
@@ -10,6 +10,7 @@ showtoc: true
 tocopen: false
 disableShare: true
 searchHidden: true
+
 ---
 
 Hi, Timo here!
