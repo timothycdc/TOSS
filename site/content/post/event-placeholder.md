@@ -1,22 +1,24 @@
 ---
+title: Event Placeholder
 author:
   - TOSS
-showtoc: false
-slug: events-welcome-test
-title: Event Placeholder
 date: 2021-07-25T20:16:17.238Z
+description: ""
 cover:
   image: /img/event-welcome.jpg
   alt: abstract background
   caption: ""
   relative: false
-tocopen: true
-disableShare: false
+showtoc: false
+tocopen: false
+categories (REQUIRED MINIMUM 1):
+  - Events
+slug: events-welcome-test
+disableShare: true
 searchHidden: false
 tags: null
 categories:
   - Events
-description: ""
 ---
 
 
