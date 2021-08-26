@@ -116,7 +116,7 @@
 .post-content p,
 .post-content figure,
 .post-content ul {
-    margin-bottom: var(--content-gap);
+    margin-bottom: calc(var(--content-gap) * 1.1);
 }
 
 .post-content ol,

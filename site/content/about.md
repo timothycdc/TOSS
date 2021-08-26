@@ -25,8 +25,10 @@ To move towards an inclusive and non-judgemental society alongside a reformed su
 
 The logo is a semicolon which is a symbol that stands in affirmation and solidarity with victims and survivors of mental health issues. Likewise, it represents continuation, where authors of stories would include semicolons when they choose not to end a sentence. The colour yellow conveys optimism, hope, and happiness.
 
-# Hidden Tricks
-We all love keyboard shortcuts!
+
+
+### Hidden Tricks from the Developer
+Here're some keyboard shortcuts!
 
 Go Home: `Alt` + `H`
 

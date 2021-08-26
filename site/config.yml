@@ -72,15 +72,15 @@ params:
     # home-info mode
     homeInfoParams:
         Title: "The Other Side of the Story \U0001F49b"
-        Content: By the youths, for the youths
+        Content: For the youth. By the youth.
 
     socialIcons:
         - name: instagram
           url: "https://www.instagram.com/toss.my/"
         - name: email
           url: "mailto:tosshelp.my@gmail.com"
-        - name: twitter
-          url: "https://www.instagram.com/toss.my/"
+        - name: linktree
+          url: "https://linktr.ee/TheOtherSideofTheStory"
 
 
 
