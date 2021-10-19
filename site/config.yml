@@ -84,9 +84,9 @@ params:
 
 
 
-#    analytics:
-#        google:
-#            SiteVerificationTag: "XYZabc"
+    analytics:
+        google:
+             SiteVerificationTag: "jitfTggbGUJICiejUl-c1ZbxRPUf759u2Yh8slWhc5M"
 #        bing:
 #            SiteVerificationTag: "XYZabc"
 #        yandex:
