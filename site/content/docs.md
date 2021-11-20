@@ -186,6 +186,8 @@ Result:
 
 {{<rawhtml>}}<br>{{</rawhtml>}}
 
+[edit 20/11/2021: this feature is buggy af. don't use it]
+
 ### Citations
 Add handy references to your writing. All reference sources automatically show up on the footer of the page regardless of where they are. Hint: the thing that separates the link from the reference is the colon (:). Now click those superscript numbers and be teleported to the footer!
 
