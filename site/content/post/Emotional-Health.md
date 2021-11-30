@@ -1,12 +1,11 @@
 ---
+title: Emotional Health
 author:
   - TOSS
 date: 2021-03-14T09:06:24.902Z
-
-description: "Tips for self-care and help "
 showtoc: true
 slug: emotional-health
-title: Emotional Health
+description: "Tips for self-care and help "
 cover:
   image: /img/selfcareemo.jpg
   alt: books and coffee on a chair
@@ -19,13 +18,12 @@ tags:
   - Tips
 categories:
   - Mental Health
-
 ---
 ## Create Joy and Satisfaction
 
 Living with mental health conditions can be extremely stressful and taxing. Thus, it is important to find activities to alleviate your good feelings.
 
-* Set daily goals for yourself and fulfil them.
+* Set daily goals for yourself and try to fulfil them before the day ends.
 * Get out and about –try to break away from your daily schedules.
 * Live healthily through deting, sleeping and exercising on a regular basis.
 
