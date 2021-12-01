@@ -71,6 +71,7 @@
   "dependencies": {
     "install": "^0.13.0",
     "npm": "^7.20.1",
-    "smoothscroll-polyfill": "^0.4.4"
+    "smoothscroll-polyfill": "^0.4.4",
+    "chalk": "4.1.0"
   }
 }
