@@ -16,7 +16,6 @@ tags:
   - menmentalhealth
 categories (REQUIRED MINIMUM 1):
   - MentalHealth
-  - ""
 ---
 It is thought that one in eight men have a common mental health problem, yet research shows that men often struggle to discuss or seek help for psychological issues. This is because men are usually traditionally stereotyped as someone who is socially dominant. We always heard people saying “toughen up you are a guy!” or “don’t whine you are not a little girl” as people believed that this characteristic is inherited by women. (Before the recent pandemic) Globally, death by suicide occurred about 1.8 times more often among males than among females in 2008, and 1.7 times in 2015. In the western world, males die by suicide three to four times more often than do females.
 
