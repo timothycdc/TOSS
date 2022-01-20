@@ -1,12 +1,13 @@
 ---
-title: mental health stigma on men
+title: Men-tal Health
 author:
   - TOSS
-date: 2022-01-20T02:21:29.656Z
+date: 2022-01-20T06:46:27.342Z
+description: Even though he cries, it doesn't mean he's weak.
 cover:
-  image: https://www.notion.so/Cover-Post-for-Men-tal-Health-f62dcc3f18fe4bf0930009998123098b#5de4659d7cbe4db783daa588359a2b40
+  image: img/nik-shuliahin-bunwp1bl0nc-unsplash.jpg
   alt: it's okay men can cry -breaking the textbook narrative
-showtoc: true
+showtoc: false
 tocopen: false
 disableShare: false
 searchHidden: false
