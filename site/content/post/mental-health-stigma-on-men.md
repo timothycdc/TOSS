@@ -6,7 +6,7 @@ date: 2022-01-20T06:46:27.342Z
 description: Even though he cries, it doesn't mean he's weak.
 cover:
   image: img/men-tal-heatlh-cover-post-1-.png
-  alt: it's okay men can cry -breaking the textbook narrative
+  alt: It's okay men can cry -breaking the textbook narrative
 showtoc: false
 tocopen: false
 disableShare: false
@@ -28,4 +28,4 @@ We can help make a better environment for men by telling them that it is okay to
 
 If you are one of the men who are now trying to get better and is seeking professional help, this is a sign for you to keep going, we are very proud of you and showing emotions is not a feminine thing. Everyone has it and we should all take care of our mental health.
 
-Tnncharity offers a completely free peer support meeting called Boys Talk where men can talk about their mental health and wellbeing. Some other great resources can be found at **[@letsgetmentalking](https://www.instagram.com/letsgetmentalking/?hl=en)**, **[@menofmanual](https://www.instagram.com/menofmanual/?hl=en)**, **[@strongmenorguk](https://www.instagram.com/strongmenorguk/?hl=en)**, and **[@thebookofman](https://www.instagram.com/thebookofman/?hl=en)**.
+**Tnncharity** offers a completely free peer support meeting called Boys Talk where men can talk about their mental health and wellbeing. Some other great resources can be found at **[@letsgetmentalking](https://www.instagram.com/letsgetmentalking/?hl=en)**, **[@menofmanual](https://www.instagram.com/menofmanual/?hl=en)**, **[@strongmenorguk](https://www.instagram.com/strongmenorguk/?hl=en)**, and **[@thebookofman](https://www.instagram.com/thebookofman/?hl=en)**.
